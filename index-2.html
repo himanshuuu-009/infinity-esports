@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Infinity Squad Cup | Free Fire MAX Tournament</title>
+<meta name="description" content="Infinity Esports - Free Fire MAX Squad Tournaments. OTP login, wallet, UPI deposit, referral, spin & win, redeem code, leaderboard aur results.">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F19;--card:#161B22;--gold:#FFB800;--cyan:#00E5FF;--ok:#00C853;--bad:#FF3D57;--txt:#fff;--mut:#9aa4b2;--line:rgba(255,255,255,.09)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Chakra Petch',system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.55;min-height:100vh;
+background-image:radial-gradient(circle at 15% 10%,rgba(255,184,0,.10),transparent 40%),radial-gradient(circle at 85% 30%,rgba(0,229,255,.09),transparent 40%);background-attachment:fixed}
+a{color:var(--cyan)}
+header{position:sticky;top:0;z-index:50;background:rgba(11,15,25,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar{max-width:1100px;margin:auto;display:flex;align-items:center;gap:14px;padding:10px 16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--gold);text-decoration:none}
+.brand img{height:34px;width:34px;border-radius:8px;object-fit:cover}
+nav{display:flex;gap:2px;flex-wrap:wrap;margin-left:auto}
+nav a{color:var(--txt);text-decoration:none;padding:7px 10px;border-radius:8px;font-size:14px;font-weight:500}
+nav a:hover,nav a.on{background:rgba(255,184,0,.14);color:var(--gold)}
+#menu{display:none;margin-left:auto;background:none;border:1px solid var(--line);color:var(--txt);padding:6px 12px;border-radius:8px;font:inherit}
+main{max-width:1100px;margin:auto;padding:22px 16px 60px}
+.pg{display:none}.pg.on{display:block}
+h1{font-size:clamp(28px,6vw,54px);line-height:1.1;margin-bottom:10px}
+h2{font-size:24px;margin:26px 0 14px;color:var(--gold)}
+h3{font-size:17px;margin-bottom:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:14px;backdrop-filter:blur(8px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.grid.mini{grid-template-columns:repeat(auto-fit,minmax(120px,1fr));margin:10px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.card .stat{background:rgba(0,0,0,.25)}
+.stat b{display:block;font-size:24px;color:var(--gold)}.stat span{color:var(--mut);font-size:13px}
+.grid.mini .stat b{font-size:18px}
+.hero{border-radius:18px;padding:34px 22px;border:1px solid rgba(255,184,0,.35);background:linear-gradient(135deg,rgba(255,184,0,.12),rgba(0,229,255,.08)),var(--card) center/cover;margin-bottom:16px;position:relative;overflow:hidden}
+.pill{display:inline-block;padding:3px 12px;border-radius:99px;font-size:13px;font-weight:600;border:1px solid}
+.up{color:var(--cyan)}.live{color:var(--ok);animation:pulse 1.2s infinite}.done{color:var(--mut)}
+@keyframes pulse{50%{opacity:.4}}
+.btn{display:inline-block;background:var(--gold);color:#111;border:0;padding:11px 22px;border-radius:10px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none}
+.btn:hover{filter:brightness(1.1)}.btn.alt{background:transparent;color:var(--cyan);border:1px solid var(--cyan)}
+.btn.sm{padding:5px 10px;font-size:13px;border-radius:7px}.btn.red{background:var(--bad);color:#fff}.btn.grn{background:var(--ok);color:#fff}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.cd{display:flex;gap:10px;margin:16px 0}.cd div{background:rgba(0,0,0,.4);border:1px solid var(--line);border-radius:10px;padding:8px 14px;text-align:center;min-width:64px}
+.cd b{font-size:26px;color:var(--cyan);display:block}.cd span{font-size:11px;color:var(--mut)}
+label{display:block;font-size:13px;color:var(--mut);margin:10px 0 4px}
+input,select,textarea{width:100%;background:#0d121b;border:1px solid var(--line);color:var(--txt);padding:10px 12px;border-radius:9px;font:inherit}
+input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:2px solid var(--cyan);outline-offset:1px}
+input[type=checkbox]{width:auto;margin-right:8px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:9px 8px;text-align:left;border-bottom:1px solid var(--line)}th{color:var(--gold);font-weight:600}
+.tw{overflow-x:auto}
+.ok{color:var(--ok)}.no{color:var(--bad)}.wait{color:var(--gold)}
+.acc{border-bottom:1px solid var(--line)}.acc summary{padding:12px 0;cursor:pointer;font-weight:600}.acc p{padding:0 0 12px;color:var(--mut)}
+.ann{border-left:3px solid var(--cyan);padding:6px 12px;margin-bottom:8px;background:rgba(0,229,255,.05);border-radius:0 8px 8px 0}
+.ann.pin{border-color:var(--gold);background:rgba(255,184,0,.07)}
+.slot{height:8px;background:#0d121b;border-radius:9px;overflow:hidden;margin-top:8px}.slot i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--cyan))}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}.tabs button{background:var(--card);border:1px solid var(--line);color:var(--txt);padding:8px 14px;border-radius:9px;font:inherit;cursor:pointer}.tabs button.on{background:var(--gold);color:#111}
+.rules p{margin-bottom:6px;white-space:pre-line}
+.qr{max-width:200px;border-radius:12px;background:#fff;padding:8px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--card);border:1px solid var(--gold);padding:10px 18px;border-radius:10px;z-index:99;display:none;max-width:90vw}
+.wa{position:fixed;right:16px;bottom:16px;background:#25D366;color:#fff;border-radius:99px;padding:12px 16px;text-decoration:none;font-weight:700;z-index:40}
+footer{text-align:center;color:var(--mut);font-size:13px;padding:24px}
+.gallery img{max-width:100%;border-radius:12px}
+.badge{background:var(--bad);color:#fff;border-radius:99px;font-size:11px;padding:1px 6px;margin-left:4px}
+.bal{font-size:36px;color:var(--gold);font-weight:700;line-height:1.1}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.muted{color:var(--mut)}
+.wheelwrap{position:relative;width:290px;height:290px;margin:26px auto}
+.wheel{position:relative;width:100%;height:100%;border-radius:50%;border:6px solid var(--gold);transition:transform 4.2s cubic-bezier(.12,.7,.1,1)}
+.wheel span{position:absolute;left:50%;top:50%;font-weight:700;font-size:15px;color:#111;transform-origin:0 0}
+.ptr{position:absolute;top:-18px;left:50%;transform:translateX(-50%);font-size:30px;color:var(--gold);z-index:2}
+.note{border-bottom:1px solid var(--line);padding:10px 0}.note:last-child{border:0}
+#recaptcha{margin-top:8px}
+@media(max-width:760px){#menu{display:block}nav{display:none;width:100%;margin:0}nav.open{display:flex}.bar{flex-wrap:wrap}.two{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}.wheel{transition-duration:.01s}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="brand" href="#home"><img id="logo" alt="" hidden><span id="brandName">Infinity Esports</span></a>
+<button id="menu" aria-label="Menu">Menu</button>
+<nav id="nav">
+<a href="#home">Home</a><a href="#tournaments">Tournaments</a><a href="#register">Register</a><a href="#my">My Registration</a><a href="#wallet">Wallet</a><a href="#rewards">Rewards</a><a href="#leaderboard">Leaderboard</a><a href="#results">Results</a><a href="#hall">Hall of Fame</a><a href="#faq">FAQ</a><a href="#rules">Rules</a><a href="#contact">Contact</a><a href="#notes" id="nBell">🔔<b class="badge" id="bellN" hidden>0</b></a><a href="#login" id="nLogin">Login</a>
+</nav></div></header>
+
+<main>
+<!-- HOME -->
+<section class="pg" id="p-home">
+<div class="hero" id="hero">
+<span class="pill" id="status">Upcoming</span>
+<h1 id="hName">Infinity Squad Cup</h1>
+<p class="muted">Free Fire MAX · Squad (4 Players) · Daily Tournaments</p>
+<div class="cd" id="cd"><div><b>--</b><span>Days</span></div><div><b>--</b><span>Hours</span></div><div><b>--</b><span>Min</span></div><div><b>--</b><span>Sec</span></div></div>
+<a class="btn" href="#register" data-reg="">Register Now</a> <a class="btn alt" href="#tournaments">Saare Tournaments</a>
+</div>
+<div class="grid">
+<div class="stat"><b id="hPrize">₹0</b><span>Prize Pool</span></div>
+<div class="stat"><b id="hFee">₹0</b><span>Entry Fee</span></div>
+<div class="stat"><b>Squad</b><span>Mode (4 Players)</span></div>
+<div class="stat"><b id="hSlots">0/0</b><span>Teams Registered</span><div class="slot"><i id="slotBar" style="width:0"></i></div></div>
+</div>
+<h2>Latest Announcements</h2><div id="annList"></div>
+<h2>Winners</h2><div id="homeWin"></div>
+<h2>Registered Teams</h2>
+<div class="two"><div><select id="teamT" aria-label="Tournament"></select></div><div><input id="teamSearch" placeholder="Team name se search karein" aria-label="Search team"></div></div>
+<div class="card tw" style="margin-top:10px"><table><thead><tr><th>#</th><th>Team</th><th>Status</th></tr></thead><tbody id="teamList"></tbody></table></div>
+</section>
+
+<!-- TOURNAMENTS -->
+<section class="pg" id="p-tournaments">
+<h2>Tournaments</h2><div id="tList"></div>
+</section>
+
+<!-- REGISTER -->
+<section class="pg" id="p-register">
+<h2>Team Registration</h2>
+<div class="card" id="regLogin" hidden><b class="wait">Registration ke liye pehle login karein.</b> <a class="btn sm" href="#login">Login with OTP</a></div>
+<div class="card" id="regClosed" hidden><b class="no">Registration abhi band hai.</b> <span id="regWhy" class="muted"></span></div>
+<div id="regWrap">
+<div class="card"><label style="margin-top:0">Tournament chunein</label><select id="regT"></select></div>
+<div class="card">
+<h3>Payment</h3>
+<label style="margin-top:0">Payment kaise karein</label><select id="payMode"><option value="upi">UPI (QR / UPI ID + UTR)</option><option value="wallet">Wallet se pay karein</option></select>
+<div id="upiPanel" style="margin-top:12px"><div class="two"><div><img class="qr" id="qrImg" alt="UPI QR" hidden><p id="noQr" class="muted">QR code admin panel se upload hoga.</p></div>
+<div><label>UPI ID</label><div style="display:flex;gap:8px"><input id="upiId" readonly><button class="btn sm" id="copyUpi" type="button">Copy</button></div>
+<p style="margin-top:12px;color:var(--mut);font-size:14px">1. QR scan karein ya UPI ID par <b id="payAmt" style="color:var(--gold)"></b> bhejein.<br>2. Payment ke baad 12 digit UTR / Transaction ID note karein.<br>3. Neeche form me UTR daal kar submit karein.</p></div></div></div>
+<div id="walPanel" hidden style="margin-top:12px"><p>Wallet Balance: <b class="ok" id="regBal">₹0</b> · Entry Fee: <b id="regFee" style="color:var(--gold)"></b></p><p class="muted" style="font-size:14px">Entry fee wallet se turant kat jayegi aur registration auto-approve ho jayegi. Balance kam ho to <a href="#wallet">Wallet</a> me paise add karein.</p></div>
+</div>
+<form class="card" id="regForm" autocomplete="off">
+<div class="two">
+<div><label>Team Name</label><input name="name" required maxlength="30"></div>
+<div><label>Captain Name</label><input name="captain" required maxlength="40"></div>
+<div><label>Captain WhatsApp Number</label><input name="wa" required inputmode="numeric" pattern="[0-9]{10}" placeholder="10 digit"></div>
+<div><label>Captain UID</label><input name="u1" required inputmode="numeric" pattern="[0-9]{8,12}"></div>
+<div><label>Player 2 UID</label><input name="u2" required inputmode="numeric" pattern="[0-9]{8,12}"></div>
+<div><label>Player 3 UID</label><input name="u3" required inputmode="numeric" pattern="[0-9]{8,12}"></div>
+<div><label>Player 4 UID</label><input name="u4" required inputmode="numeric" pattern="[0-9]{8,12}"></div>
+<div id="utrBox"><label>UTR / Transaction ID</label><input name="utr" id="utrIn" required inputmode="numeric" pattern="[0-9]{12}" placeholder="12 digit UTR"></div>
+</div>
+<div id="shotBox"><label>Payment Screenshot (optional)</label><input type="file" id="shot" accept="image/*"></div>
+<label style="margin-top:14px"><input type="checkbox" id="agree" required>Main <a href="#rules">Tournament Rules</a> se agree hu.</label>
+<p id="regErr" class="no"></p>
+<button class="btn" id="regBtn" type="submit" style="margin-top:10px">Submit Registration</button>
+</form>
+</div>
+<div class="card" id="regDone" hidden><h3 class="ok">Registration submit ho gayi!</h3><p>Aapka Team ID: <b id="doneId" style="color:var(--gold)"></b><br><span id="doneMsg"></span></p></div>
+</section>
+
+<!-- MY REGISTRATION -->
+<section class="pg" id="p-my">
+<h2>My Registration</h2>
+<div id="myList"></div>
+<h3 style="margin-top:18px">Team ID se check karein</h3>
+<div class="card"><div class="two"><div><label>Team ID</label><input id="myId" placeholder="ISC-XXXXXX"></div><div><label>Captain WhatsApp Number</label><input id="myWa" inputmode="numeric"></div></div>
+<button class="btn" id="myBtn" style="margin-top:12px">Check Status</button></div>
+<div id="myOut"></div>
+</section>
+
+<!-- WALLET -->
+<section class="pg" id="p-wallet">
+<h2>Wallet</h2>
+<div class="card gate" id="walGate" hidden><b class="wait">Wallet dekhne ke liye login karein.</b> <a class="btn sm" href="#login">Login with OTP</a></div>
+<div id="walBox" hidden>
+<div class="card row"><div><span class="muted">Available Balance</span><div class="bal" id="walBal">₹0</div><small class="muted" id="walPhone"></small></div><button class="btn sm red" id="logoutBtn">Logout</button></div>
+<div class="tabs" id="wTabs"><button data-wt="add" class="on">Add Money</button><button data-wt="out">Withdraw</button><button data-wt="hist">History</button></div>
+<div id="wt-add" class="card">
+<h3>Deposit (UPI se)</h3>
+<div class="two"><div><img class="qr" id="qrImg2" alt="UPI QR" hidden></div>
+<div><label>UPI ID</label><div style="display:flex;gap:8px"><input id="upiId2" readonly><button class="btn sm" id="copyUpi2" type="button">Copy</button></div>
+<p class="muted" style="font-size:14px;margin-top:10px">1. UPI se paise bhejein.<br>2. 12 digit UTR niche daalein.<br>3. Admin verify karega to balance add ho jayega.<br><b id="minDep"></b></p></div></div>
+<div class="two"><div><label>Amount (₹)</label><input id="depAmt" type="number" min="1"></div><div><label>UTR / Transaction ID</label><input id="depUtr" inputmode="numeric" maxlength="12" placeholder="12 digit UTR"></div></div>
+<label>Payment Screenshot (optional)</label><input type="file" id="depShot" accept="image/*">
+<p id="depErr" class="no"></p><button class="btn" id="depBtn" style="margin-top:10px">Deposit Request Bhejein</button>
+</div>
+<div id="wt-out" class="card" hidden>
+<h3>Withdraw</h3><p class="muted" id="minWd"></p>
+<div class="two"><div><label>Amount (₹)</label><input id="wdAmt" type="number" min="1"></div><div><label>Aapki UPI ID</label><input id="wdUpi" placeholder="name@bank"></div></div>
+<p id="wdErr" class="no"></p><button class="btn" id="wdBtn" style="margin-top:10px">Withdraw Request Bhejein</button>
+<p class="muted" style="font-size:13px;margin-top:8px">Request bhejte hi amount balance se hold ho jata hai. Reject hone par wapas wallet me aa jayega.</p>
+</div>
+<div id="wt-hist" class="card tw" hidden><table><thead><tr><th>Date</th><th>Type</th><th>Amount</th><th>Status</th></tr></thead><tbody id="hBody"></tbody></table></div>
+</div>
+</section>
+
+<!-- REWARDS -->
+<section class="pg" id="p-rewards">
+<h2>Rewards</h2>
+<div class="card" id="rwGate" hidden><b class="wait">Rewards ke liye login karein.</b> <a class="btn sm" href="#login">Login with OTP</a></div>
+<div id="rwBox" hidden>
+<div class="tabs" id="rTabs"><button data-rt="spin" class="on">Spin &amp; Win</button><button data-rt="redeem">Redeem Code</button><button data-rt="refer">Refer &amp; Earn</button></div>
+<div id="rt-spin" class="card" style="text-align:center">
+<h3>Daily Spin &amp; Win</h3><p class="muted">Har 24 ghante me 1 free spin. Jeeti hui rakam seedha wallet me.</p>
+<div class="wheelwrap"><div class="ptr">▼</div><div class="wheel" id="wheel"></div></div>
+<button class="btn" id="spinBtn">SPIN</button><p id="spinMsg" style="margin-top:12px"></p>
+</div>
+<div id="rt-redeem" class="card" hidden>
+<h3>Redeem Code</h3><p class="muted">Admin ya WhatsApp channel se mila code yahan daalein. Har code ek account par ek hi baar chalega.</p>
+<label>Code</label><input id="rcIn" maxlength="20" style="text-transform:uppercase" placeholder="CODE">
+<p id="rcMsg" style="margin-top:8px"></p><button class="btn" id="rcBtn" style="margin-top:10px">Redeem</button>
+</div>
+<div id="rt-refer" class="card" hidden>
+<h3>Refer &amp; Earn</h3><p class="muted" id="refTxt"></p>
+<div class="two"><div><label>Aapka Referral Code</label><input id="refCode" readonly></div><div><label>Referral Earnings</label><input id="refEarn" readonly></div></div>
+<label>Share Link</label><div style="display:flex;gap:8px"><input id="refLink" readonly><button class="btn sm" id="refCopy" type="button">Copy</button></div>
+<a class="btn alt" id="refWa" target="_blank" rel="noopener" style="margin-top:12px">WhatsApp par Share karein</a>
+</div>
+</div>
+</section>
+
+<!-- NOTIFICATIONS -->
+<section class="pg" id="p-notes">
+<h2>Notifications</h2><div class="card" id="noteBox"></div>
+</section>
+
+<!-- LOGIN -->
+<section class="pg" id="p-login">
+<div class="card" style="max-width:440px;margin:30px auto">
+<h3>Email se Login / Sign up</h3>
+<label>Email</label><input id="eEmail" type="email" autocomplete="email" placeholder="you@gmail.com">
+<label>Password (kam se kam 6 character)</label><input id="ePass" type="password" autocomplete="current-password">
+<label>Naam (sirf naye users ke liye)</label><input id="eName" maxlength="30">
+<label>Referral Code (optional)</label><input id="eRef" maxlength="10" style="text-transform:uppercase">
+<div style="display:flex;gap:8px;margin-top:12px"><button class="btn" id="emLogin" type="button">Login</button><button class="btn alt" id="emSignup" type="button">Sign up</button></div>
+<p style="margin-top:8px"><a href="#login" id="emReset">Password bhool gaye?</a></p>
+<p id="eErr" class="no" style="margin-top:8px"></p>
+<p class="muted" style="text-align:center;margin:18px 0 6px">— ya —</p>
+<h3>OTP se Login / Sign up</h3>
+<div id="lStep1"><label>Mobile Number (+91)</label><input id="lPhone" inputmode="numeric" maxlength="10" placeholder="10 digit number" autocomplete="tel-national">
+<button class="btn" id="otpSend" style="margin-top:12px">OTP Bhejein</button></div>
+<div id="lStep2" hidden><p class="muted">OTP <b id="lShow"></b> par bheja gaya hai.</p>
+<label>6 digit OTP</label><input id="lOtp" inputmode="numeric" maxlength="6" autocomplete="one-time-code">
+<label>Naam (sirf naye users ke liye)</label><input id="lName" maxlength="30">
+<label>Referral Code (optional)</label><input id="lRef" maxlength="10" style="text-transform:uppercase">
+<div style="display:flex;gap:8px;margin-top:12px"><button class="btn" id="otpVerify">Verify &amp; Login</button><button class="btn alt" id="otpBack" type="button">Number badlein</button></div></div>
+<p id="lErr" class="no" style="margin-top:8px"></p>
+<div id="recaptcha"></div>
+</div>
+</section>
+
+<!-- LEADERBOARD -->
+<section class="pg" id="p-leaderboard">
+<h2>Leaderboard</h2>
+<select id="lbT" aria-label="Tournament" style="margin-bottom:12px"></select>
+<div class="card tw"><table><thead><tr><th>Rank</th><th>Team</th><th>Total Kills</th><th>Total Points</th></tr></thead><tbody id="lbBody"></tbody></table></div>
+</section>
+
+<!-- RESULTS -->
+<section class="pg" id="p-results">
+<h2>Match Results</h2>
+<select id="resT" aria-label="Tournament" style="margin-bottom:12px"></select>
+<div id="resBox"></div>
+</section>
+
+<!-- HALL -->
+<section class="pg" id="p-hall">
+<h2>Hall of Fame</h2><div class="grid" id="hallBox"></div>
+</section>
+
+<!-- FAQ -->
+<section class="pg" id="p-faq"><h2>FAQ</h2><div class="card" id="faqBox"></div></section>
+
+<!-- RULES -->
+<section class="pg" id="p-rules">
+<h2>Official Tournament Rules</h2><div class="card rules" id="cRules"></div>
+<h2>Refund Policy</h2><div class="card rules" id="cRefund"></div>
+<h2>Privacy Policy</h2><div class="card rules" id="cPrivacy"></div>
+<h2>Terms &amp; Conditions</h2><div class="card rules" id="cTerms"></div>
+<button class="btn alt" onclick="window.print()">Download Rules PDF</button>
+</section>
+
+<!-- CONTACT -->
+<section class="pg" id="p-contact">
+<h2>Contact Us</h2><div class="card" id="contactBox"></div>
+</section>
+
+<!-- ADMIN -->
+<section class="pg" id="p-admin">
+<div id="loginBox" class="card" style="max-width:420px;margin:auto">
+<h3>Admin Login</h3><label>Email</label><input id="aEmail" type="email"><label>Password</label><input id="aPass" type="password">
+<p id="aErr" class="no"></p><button class="btn" id="aLogin" style="margin-top:10px">Login</button></div>
+<div id="adminBox" hidden>
+<div style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0" id="aHello">Admin</h2><button class="btn sm red" id="aOut">Logout</button></div>
+<div class="tabs" id="aTabs" style="margin-top:14px"></div>
+<div id="aBody"></div>
+</div>
+</section>
+</main>
+<footer>© <span id="yr"></span> <span id="fOrg">Infinity Esports</span> · Free Fire MAX Tournament · <a href="#admin">Admin</a></footer>
+<a class="wa" id="waBtn" href="#" target="_blank" rel="noopener">WhatsApp Support</a>
+<div class="toast" id="toast"></div>
+
+<script type="module">
+import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import {getFirestore,doc,getDoc,setDoc,collection,onSnapshot,updateDoc,deleteDoc,addDoc,query,where,getDocs,runTransaction,writeBatch} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import {getAuth,signInWithEmailAndPassword,signOut,onAuthStateChanged,updatePassword,RecaptchaVerifier,signInWithPhoneNumber,createUserWithEmailAndPassword,sendPasswordResetEmail} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+/* ====== 1) APNA FIREBASE CONFIG YAHAN PASTE KAREIN ====== */
+const firebaseConfig={
+  apiKey:"AIzaSyCBLqxt3ZJQzvwkRxZScI-UjUX14PyTr5o",
+  authDomain:"infinity-esports-33b91.firebaseapp.com",
+  projectId:"infinity-esports-33b91",
+  storageBucket:"infinity-esports-33b91.firebasestorage.app",
+  messagingSenderId:"203376206102",
+  appId:"1:203376206102:web:9876bd974d0360951fb037"
+};
+/* ======================================================== */
+/* ADMIN ka email yahan likho (sirf yahi email admin panel khol sakega) */
+const ADMIN_EMAIL="himanshumaurya0050@gmail.com";
+
+const app=initializeApp(firebaseConfig),db=getFirestore(app),auth=getAuth(app);
+auth.languageCode='hi';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let toastT;const toast=m=>{const t=$('toast');t.textContent=m;t.style.display='block';clearTimeout(toastT);toastT=setTimeout(()=>t.style.display='none',3000)};
+const money=n=>'₹'+(Number(n)||0);
+const fmt=ms=>ms?new Date(ms).toLocaleString('en-IN',{dateStyle:'medium',timeStyle:'short'}):'-';
+const lsGet=k=>{try{return localStorage.getItem(k)}catch{return null}},lsSet=(k,v)=>{try{localStorage.setItem(k,v)}catch{}};
+
+const DEF={name:'Infinity Squad Cup',org:'Infinity Esports',logo:'',banner:'',
+whatsapp:'9598833682',upi:'9682796291@ibl',qr:'',channel:'',group:'',telegram:'',insta:'',email:'',adminName:'Admin',
+primary:'#FFB800',secondary:'#00E5FF',
+refReward:10,refBonus:5,spinPrizes:'0,1,2,5,10',spinMax:10,minDeposit:10,minWithdraw:50,
+cRules:`Entry Fee Non-Refundable.\nSirf Registered Players hi Match khel sakte hain.\nTeam Registration ke baad Players Change nahi honge.\nRoom ID & Password Match se 10 Minutes pehle Website aur WhatsApp Group me share kiya jayega.\nLate Join karne wale Players ke liye Organizer zimmedar nahi hoga.\nInternet, Device ya Game Crash Player ki apni Responsibility hogi.\nOrganizer ka Decision Final aur Binding hoga.\n\nGameplay Rules:\nSirf Mobile Devices Allowed. Emulator Strictly Prohibited.\nHacks, Scripts, Config Files, VPN ya Third-Party Tools Allowed nahi hain.\nTeaming Strictly Prohibited. Glitch Abuse Allowed nahi hai.\nToxic Behaviour aur Abusive Language Allowed nahi hai.\nFake UID dene par Registration Cancel kar di jayegi.\n\nDisqualification:\nHack / Cheat, Teaming, Fake UID, Fake Payment Details, Galat UTR, Abusive Language, Match Recording ya Screenshot Edit karna, ya koi bhi Rule violate karna - Team turant Disqualify ho sakti hai.\n\nPrize Policy:\nPrize Match Results verify hone ke baad 24-48 Hours ke andar UPI ke through transfer kiya jayega. Galat UPI ID dene par Organizer zimmedar nahi hoga.`,
+cRefund:`Entry Fee Refund nahi hogi agar:\n- Player Match Join nahi karta.\n- Player Late aata hai.\n- Internet Issue hota hai.\n- Team khud Registration Cancel karti hai.\n- Rule Violation ki wajah se Team Disqualify hoti hai.\nRefund sirf Tournament Cancel hone ki Situation me diya jayega.`,
+cPrivacy:`- Player UID aur Personal Information Secure rakhi jayegi.\n- WhatsApp Number kisi Third Party ke saath Share nahi kiya jayega.\n- Payment Details sirf Verification ke liye Use hongi.\n- User Data bina Permission ke kisi aur Purpose ke liye Use nahi kiya jayega.`,
+cTerms:`Registration karte hi Player sabhi Tournament Rules aur Policies ko Accept karta hai.\nOrganizer kisi bhi Team ki Registration Accept ya Reject karne ka adhikar rakhta hai.\nOrganizer kisi bhi samay Tournament Schedule, Prize Pool ya Rules me badlav kar sakta hai.\nCheating, Fraud ya Fake Payment pakde jane par Permanent Ban lagaya ja sakta hai.\nWebsite ka galat istemal karne wale Users ka Account Suspend kiya ja sakta hai.`};
+const TDEF={name:'',fee:40,winPrize:300,runPrize:100,limit:12,date:'',time:'',map:'Bermuda',deadline:'',open:true,roomId:'',roomPass:'',roomPub:false,points:'12,9,8,7,6,5,4,3,2,1,0,0',perKill:1,res:null};
+
+const FAQ=[["Tournament ka Entry Fee kitna hai?","Entry Fee per Squad admin dwara set ki gayi fee hai (Home page par dikhti hai)."],["Ek Team me kitne Players honge?","Har Team me 4 Players hone zaroori hain."],["Registration kaise karein?","Team Details fill karein, UPI se payment karein, UTR (Transaction ID) submit karein aur registration complete karein."],["Payment kis tarike se karni hogi?","Website par diye gaye UPI QR Code ya UPI ID ke through payment karein."],["UTR (Transaction ID) kya hota hai?","Payment complete hone ke baad jo unique Transaction Number milta hai, usi ko UTR kehte hain."],["Payment Verify hone me kitna time lagega?","Aam taur par 5-30 minutes. Kabhi-kabhi thoda adhik samay bhi lag sakta hai."],["Registration Approve hui ya nahi kaise pata chalega?","'My Registration' page par apna Status check kar sakte hain."],["Room ID aur Password kab milega?","Match se 10-15 minutes pehle website aur WhatsApp Group par share kiya jayega."],["Agar galat UTR submit ho gaya to?","Turant WhatsApp Support se contact karein. Verification ke baad hi correction hoga."],["Payment ho gayi lekin registration nahi hui to?","Payment Screenshot aur UTR ke saath WhatsApp Support par contact karein."],["Entry Fee Refund milegi?","Nahi. Entry Fee Non-Refundable hai. Sirf Tournament Cancel hone par refund milega."],["Registration ke baad Players change kar sakte hain?","Nahi. Registration complete hone ke baad Players change nahi ho sakte."],["Emulator Allowed hai?","Nahi. Sirf Mobile Devices Allowed hain."],["Hack ya Cheat use karne par kya hoga?","Team turant Disqualify hogi aur future tournaments se ban ho sakti hai."],["Internet Issue ya Game Crash par Rematch milega?","Nahi. Internet aur Device Issues ki zimmedari Player ki hogi."],["Prize kab milega?","Results verify hone ke baad 24-48 Hours me Winner aur Runner-up ko UPI se transfer hoga."],["Match ka Result kahan dekh sakte hain?","Website ke Leaderboard aur Results section me."],["Support kaise milega?","Contact Us section me diye gaye WhatsApp, Telegram ya Email se."],["Organizer ka Decision Final hoga?","Haan. Organizer ka Decision Final aur Binding hoga."],["Kya ek Player multiple Teams se khel sakta hai?","Nahi. Multiple registrations milne par sabhi cancel ho sakti hain."]];
+
+let S={...DEF},T=[],teams=[],anns=[],hall=[],notes=[],user=null,me=null,myTx=[],isAdmin=false;
+let usersAll=[],txns=[],allNotes=[];
+let regSel='',teamSel='',lbSel='',resSel='';
+
+/* ---------- Router ---------- */
+const PAGES=['home','tournaments','register','my','wallet','rewards','notes','login','leaderboard','results','hall','faq','rules','contact','admin'];
+function route(){
+  const h=(location.hash||'#home').slice(1),id=PAGES.includes(h)?h:'home';
+  document.querySelectorAll('.pg').forEach(p=>p.classList.toggle('on',p.id==='p-'+id));
+  document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+id));
+  $('nav').classList.remove('open');scrollTo(0,0);
+  if(id==='notes'){lsSet('seenAt',String(Date.now()));paintNotes()}
+}
+addEventListener('hashchange',route);route();
+$('menu').onclick=()=>$('nav').classList.toggle('open');
+$('yr').textContent=new Date().getFullYear();
+try{const r=new URLSearchParams(location.search).get('ref');if(r)lsSet('ref',r.toUpperCase().slice(0,10))}catch{}
+
+/* ---------- Tournament helpers ---------- */
+const tById=id=>T.find(t=>t.id===id);
+const startOf=t=>t&&t.date&&t.time?new Date(t.date+'T'+t.time):null;
+const tTeams=t=>teams.filter(x=>x.tid===t.id&&x.status!=='rejected'&&x.status!=='banned');
+const left=t=>Math.max(0,Number(t.limit)-tTeams(t).length);
+const tPrize=t=>Number(t.winPrize)+Number(t.runPrize);
+const pts=t=>String(t.points||TDEF.points).split(',').map(n=>Number(n.trim())||0);
+const tState=t=>t.res&&t.res.published?'Completed':(startOf(t)&&new Date()>=startOf(t)?'Live':'Upcoming');
+function regWhy(t){
+  if(!t)return 'Koi tournament nahi hai.';
+  const dl=t.deadline?new Date(t.deadline):null;
+  if(!t.open)return 'Admin ne registration band ki hai.';
+  if(tState(t)==='Completed')return 'Tournament khatam ho chuka hai.';
+  if(dl&&new Date()>dl)return 'Registration deadline nikal chuki hai.';
+  if(!left(t))return 'Sabhi slots full ho chuke hain.';
+  return '';
+}
+function featured(){
+  return T.find(t=>tState(t)==='Live')||T.filter(t=>tState(t)==='Upcoming')[0]||T[T.length-1]||null;
+}
+function fillSel(el,items,cur){
+  el.innerHTML=items.map(i=>`<option value="${esc(i.v)}">${esc(i.l)}</option>`).join('');
+  const v=items.some(i=>i.v===cur)?cur:(items[0]?items[0].v:'');el.value=v;return v;
+}
+const tOpts=(f=()=>true)=>T.filter(f).map(t=>({v:t.id,l:t.name+' (₹'+t.fee+')'}));
+
+/* ---------- Data listeners ---------- */
+const must=e=>console.error(e);
+const soft=()=>{if(!isAdmin)return;const a=document.activeElement;if(a&&$('aBody').contains(a)&&/INPUT|TEXTAREA|SELECT/.test(a.tagName))return;adminRender()};
+onSnapshot(doc(db,'settings','main'),s=>{S={...DEF,...(s.exists()?s.data():{})};paintAll();soft()},must);
+onSnapshot(collection(db,'tournaments'),s=>{T=s.docs.map(d=>({...TDEF,id:d.id,...d.data()})).sort((a,b)=>(+(startOf(a)||a.createdAt||0))-(+(startOf(b)||b.createdAt||0)));paintAll();soft()},must);
+onSnapshot(collection(db,'teams'),s=>{teams=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(a.createdAt||0)-(b.createdAt||0));paintAll();soft()},must);
+onSnapshot(collection(db,'announcements'),s=>{anns=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(b.pin?1:0)-(a.pin?1:0)||(b.at||0)-(a.at||0));paintAll();soft()},must);
+onSnapshot(collection(db,'hall'),s=>{hall=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(b.at||0)-(a.at||0));paintAll();soft()},must);
+
+let subs=[],unNotes=null;
+function subNotes(){
+  if(unNotes)unNotes();
+  const q=user?query(collection(db,'notifications'),where('to','in',['all',user.uid])):query(collection(db,'notifications'),where('to','==','all'));
+  unNotes=onSnapshot(q,s=>{notes=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(b.at||0)-(a.at||0));paintNotes()},must);
+}
+onAuthStateChanged(auth,u=>{
+  isAdmin=!!(u&&u.email&&u.email.toLowerCase()===ADMIN_EMAIL.toLowerCase());user=(u&&!isAdmin)?u:null;me=null;myTx=[];
+  subs.forEach(f=>f());subs=[];
+  if(user){
+    subs.push(onSnapshot(doc(db,'users',user.uid),s=>{me=s.exists()?{id:s.id,...s.data()}:null;paintAll()},must));
+    subs.push(onSnapshot(query(collection(db,'txns'),where('uid','==',user.uid)),s=>{myTx=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>b.at-a.at);paintAll()},must));
+    if(location.hash==='#login')location.hash='#home';
+  }
+  if(isAdmin){
+    subs.push(onSnapshot(collection(db,'users'),s=>{usersAll=s.docs.map(d=>({id:d.id,...d.data()}));soft()},must));
+    subs.push(onSnapshot(collection(db,'txns'),s=>{txns=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>b.at-a.at);soft()},must));
+    subs.push(onSnapshot(collection(db,'notifications'),s=>{allNotes=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>b.at-a.at);soft()},must));
+  }
+  $('loginBox').hidden=isAdmin;$('adminBox').hidden=!isAdmin;
+  subNotes();paintAll();if(isAdmin)adminRender();
+});
+
+/* ---------- Paint ---------- */
+function paintAll(){paintSite();paintHome();paintTournaments();paintRegister();paintBoards();paintAuth();paintWallet();paintRewards();paintNotes();paintMy()}
+
+function paintSite(){
+  document.documentElement.style.setProperty('--gold',S.primary);document.documentElement.style.setProperty('--cyan',S.secondary);
+  document.title=S.name+' | Free Fire MAX Tournament';
+  $('brandName').textContent=S.org;$('fOrg').textContent=S.org;
+  if(S.logo){$('logo').src=S.logo;$('logo').hidden=false}else $('logo').hidden=true;
+  $('upiId').value=S.upi;$('upiId2').value=S.upi;
+  [['qrImg','noQr'],['qrImg2']].forEach(([a,b])=>{const i=$(a);if(S.qr){i.src=S.qr;i.hidden=false;if(b)$(b).hidden=true}else{i.hidden=true;if(b)$(b).hidden=false}});
+  const wa=String(S.whatsapp).replace(/\D/g,'');$('waBtn').href='https://wa.me/91'+wa;
+  ['Rules','Refund','Privacy','Terms'].forEach(k=>$('c'+k).innerHTML='<p>'+esc(S['c'+k])+'</p>');
+  const lst=[['WhatsApp Support (Messages Only)',S.whatsapp?'https://wa.me/91'+wa:'',S.whatsapp],['WhatsApp Channel',S.channel,'Join Channel'],['WhatsApp Group',S.group,'Join Group'],['Telegram',S.telegram,'Open Telegram'],['Instagram',S.insta,'Open Instagram'],['Email',S.email?'mailto:'+S.email:'',S.email]].filter(x=>x[1]);
+  $('contactBox').innerHTML=lst.map(x=>`<p style="margin-bottom:10px"><b>${x[0]}:</b> <a href="${esc(x[1])}" target="_blank" rel="noopener">${esc(x[2])}</a></p>`).join('')||'Contact details jald add honge.';
+  $('minDep').textContent='Minimum deposit: '+money(S.minDeposit);
+  $('minWd').textContent='Minimum withdraw: '+money(S.minWithdraw)+(me?' · Balance: '+money(me.balance):'');
+}
+
+function tCard(t){
+  const st=tState(t),why=regWhy(t),n=tTeams(t).length;
+  return `<div class="card"><div class="row"><h3 style="margin:0">${esc(t.name)}</h3><span class="pill ${({Upcoming:'up',Live:'live',Completed:'done'})[st]}">${st}</span></div>
+<div class="grid mini"><div class="stat"><b>${money(t.fee)}</b><span>Entry Fee</span></div><div class="stat"><b>${money(tPrize(t))}</b><span>Prize Pool</span></div><div class="stat"><b>${esc(t.map)}</b><span>Map</span></div><div class="stat"><b>${esc(t.date||'TBA')}</b><span>${esc(t.time||'Time jald')}</span></div><div class="stat"><b>${n}/${t.limit}</b><span>Teams</span></div></div>
+<div class="slot"><i style="width:${Math.min(100,n/(t.limit||1)*100)}%"></i></div>
+<details class="acc" style="margin-top:8px"><summary>Details &amp; Points System</summary><div class="tw"><table>${[['Winner Prize',money(t.winPrize)],['Runner-up Prize',money(t.runPrize)],['Total Players',t.limit*4],['Registration Deadline',t.deadline?esc(t.deadline.replace('T',' ')):'-'],['Registration',why?'<b class="no">Closed</b> <small class="muted">'+why+'</small>':'<b class="ok">Open</b>'],['Slots Left',left(t)]].map(r=>`<tr><th>${r[0]}</th><td>${r[1]}</td></tr>`).join('')}</table></div><p class="muted" style="margin-top:8px">${pts(t).map((p,i)=>'Rank '+(i+1)+' = '+p).join(' · ')} · Per Kill = ${t.perKill}</p></details>
+<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">${why?'':`<a class="btn sm" href="#register" data-reg="${t.id}">Join Now</a>`}<a class="btn sm alt" href="#leaderboard" data-lb="${t.id}">Leaderboard</a></div></div>`;
+}
+function paintTournaments(){
+  $('tList').innerHTML=T.length?[...T].reverse().map(tCard).join(''):'<p class="muted">Abhi koi tournament nahi hai. Jald aa raha hai!</p>';
+}
+function paintHome(){
+  const f=featured(),st=f?tState(f):'Upcoming';
+  $('hName').textContent=f?f.name:S.name;
+  const el=$('status');el.textContent=st;el.className='pill '+({Upcoming:'up',Live:'live',Completed:'done'})[st];
+  $('hero').style.backgroundImage=S.banner?`linear-gradient(rgba(11,15,25,.7),rgba(11,15,25,.85)),url(${S.banner})`:'';
+  document.querySelector('[data-reg]').dataset.reg=f?f.id:'';
+  const n=f?tTeams(f).length:0;
+  $('hPrize').textContent=f?money(tPrize(f)):'₹0';$('hFee').textContent=f?money(f.fee):'₹0';
+  $('hSlots').textContent=n+'/'+(f?f.limit:0);$('slotBar').style.width=f?Math.min(100,n/(f.limit||1)*100)+'%':'0';
+  $('annList').innerHTML=anns.map(a=>`<div class="ann ${a.pin?'pin':''}">${a.pin?'📌 ':''}${esc(a.text)}</div>`).join('')||'<p class="muted">Abhi koi announcement nahi hai.</p>';
+  teamSel=fillSel($('teamT'),T.map(t=>({v:t.id,l:t.name})),teamSel||(f?f.id:''));
+  drawTeams();
+  const done=[...T].reverse().find(t=>t.res&&t.res.published);
+  const w=done?done.res.rows.filter(r=>r.placement<=2).sort((a,b)=>a.placement-b.placement):[];
+  $('homeWin').innerHTML=w.length?`<p class="muted" style="margin-bottom:8px">${esc(done.name)}</p><div class="grid">`+w.map(r=>`<div class="stat"><b>${r.placement===1?'🥇':'🥈'} ${esc(r.name)}</b><span>${r.placement===1?'Winner · '+money(done.winPrize):'Runner-up · '+money(done.runPrize)}</span></div>`).join('')+'</div>':'<p class="muted">Result abhi publish nahi hua.</p>';
+  $('hallBox').innerHTML=hall.map(h=>`<div class="card">${h.img?`<img src="${h.img}" alt="" style="width:100%;border-radius:10px;margin-bottom:10px">`:''}<h3>🏆 ${esc(h.team)}</h3><p class="muted">Prize: ₹${esc(h.prize)}<br>${esc(h.date)}</p></div>`).join('')||'<p class="muted">Pehle winners jald yahan dikhenge.</p>';
+}
+function drawTeams(){
+  const q=$('teamSearch').value.trim().toLowerCase(),t=tById(teamSel);
+  const l=t?tTeams(t).filter(x=>x.name.toLowerCase().includes(q)):[];
+  $('teamList').innerHTML=l.map((x,i)=>`<tr><td>${i+1}</td><td>${esc(x.name)}</td><td class="${x.status==='approved'?'ok':'wait'}">${x.status==='approved'?'Approved':'Pending'}</td></tr>`).join('')||'<tr><td colspan="3" class="muted">Koi team nahi mili.</td></tr>';
+}
+$('teamSearch').oninput=drawTeams;$('teamT').onchange=e=>{teamSel=e.target.value;drawTeams()};
+$('faqBox').innerHTML=FAQ.map(f=>`<details class="acc"><summary>${esc(f[0])}</summary><p>${esc(f[1])}</p></details>`).join('');
+const copy=id=>navigator.clipboard.writeText($(id).value).then(()=>toast('Copy ho gaya'));
+$('copyUpi').onclick=()=>copy('upiId');$('copyUpi2').onclick=()=>copy('upiId2');
+document.addEventListener('click',e=>{
+  const r=e.target.closest('[data-reg]');if(r&&r.dataset.reg)regSel=r.dataset.reg;
+  const l=e.target.closest('[data-lb]');if(l){lbSel=l.dataset.lb;resSel=l.dataset.lb}
+});
+setInterval(()=>{
+  const f=featured(),st=startOf(f),b=$('cd').querySelectorAll('b');
+  if(!st){b.forEach(x=>x.textContent='--');return}
+  let d=Math.max(0,st-new Date());const v=[Math.floor(d/864e5),Math.floor(d/36e5)%24,Math.floor(d/6e4)%60,Math.floor(d/1e3)%60];
+  b.forEach((x,i)=>x.textContent=String(v[i]).padStart(2,'0'));
+  paintSpinTimer();
+},1000);
+
+/* ---------- Leaderboard / Results ---------- */
+function paintBoards(){
+  const dn=[...T].reverse().find(t=>t.res&&t.res.published),def=dn?dn.id:(featured()||{}).id;
+  lbSel=fillSel($('lbT'),T.map(t=>({v:t.id,l:t.name})),lbSel||def);
+  resSel=fillSel($('resT'),T.map(t=>({v:t.id,l:t.name})),resSel||def);
+  const a=tById(lbSel),rows=a&&a.res&&a.res.published?[...a.res.rows].sort((x,y)=>y.points-x.points||y.kills-x.kills):[];
+  $('lbBody').innerHTML=rows.map((r,i)=>`<tr><td>${i+1}</td><td>${esc(r.name)}</td><td>${r.kills}</td><td><b style="color:var(--gold)">${r.points}</b></td></tr>`).join('')||'<tr><td colspan="4" class="muted">Leaderboard abhi update nahi hua.</td></tr>';
+  const b=tById(resSel),R=b&&b.res&&b.res.published?b.res:null;
+  const tk=R?R.rows.reduce((s,r)=>s+Number(r.kills),0):0;
+  $('resBox').innerHTML=R?`<div class="grid"><div class="stat"><b>🥇 ${esc(R.winner||'-')}</b><span>Winner</span></div><div class="stat"><b>🥈 ${esc(R.runner||'-')}</b><span>Runner-up</span></div><div class="stat"><b>${esc(R.mvp||'-')}</b><span>Match MVP</span></div><div class="stat"><b>${tk}</b><span>Total Kills</span></div></div>${R.shot?`<div class="card gallery" style="margin-top:14px"><img src="${R.shot}" alt="Match screenshot"></div>`:''}`:'<p class="muted">Result abhi publish nahi hua.</p>';
+}
+$('lbT').onchange=e=>{lbSel=e.target.value;paintBoards()};$('resT').onchange=e=>{resSel=e.target.value;paintBoards()};
+
+/* ---------- Image helper (resize -> base64) ---------- */
+const img64=(file,max=700,q=.7)=>new Promise((res,rej)=>{if(!file)return res('');const r=new FileReader();r.onload=()=>{const i=new Image();i.onload=()=>{const k=Math.min(1,max/Math.max(i.width,i.height)),c=document.createElement('canvas');c.width=i.width*k;c.height=i.height*k;c.getContext('2d').drawImage(i,0,0,c.width,c.height);res(c.toDataURL('image/jpeg',q))};i.onerror=rej;i.src=r.result};r.onerror=rej;r.readAsDataURL(file)});
+const logTx=(tx,o)=>tx.set(doc(collection(db,'txns')),{at:Date.now(),status:'done',...o});
+const notify=(to,title,text)=>addDoc(collection(db,'notifications'),{to,title,text,at:Date.now()}).catch(must);
+
+/* ---------- OTP Login ---------- */
+let confirmation=null,rv=null;
+const lErr=m=>$('lErr').textContent=m||'';
+function paintAuth(){
+  const nl=$('nLogin');
+  if(user){nl.textContent='₹'+(me?me.balance:0);nl.href='#wallet'}else{nl.textContent='Login';nl.href='#login'}
+  if(!$('lRef').value)$('lRef').value=lsGet('ref')||'';if(!$('eRef').value)$('eRef').value=lsGet('ref')||'';
+}
+$('otpSend').onclick=async()=>{
+  const ph=$('lPhone').value.trim();lErr('');
+  if(!/^[6-9]\d{9}$/.test(ph)){lErr('10 digit sahi mobile number daalein.');return}
+  $('otpSend').disabled=true;
+  try{
+    rv=rv||new RecaptchaVerifier(auth,'recaptcha',{size:'invisible'});
+    confirmation=await signInWithPhoneNumber(auth,'+91'+ph,rv);
+    $('lShow').textContent='+91 '+ph;$('lStep1').hidden=true;$('lStep2').hidden=false;
+  }catch(e){
+    console.error(e);
+    lErr(e.code==='auth/too-many-requests'?'Bahut zyada try ho gaye. Thodi der baad try karein.':e.code==='auth/invalid-phone-number'?'Mobile number sahi nahi hai.':'OTP nahi bhej paye. Internet check karein ya baad me try karein.');
+    try{rv.clear()}catch{}rv=null;
+  }finally{$('otpSend').disabled=false}
+};
+$('otpBack').onclick=()=>{$('lStep1').hidden=false;$('lStep2').hidden=true;$('lOtp').value='';lErr('')};
+$('otpVerify').onclick=async()=>{
+  const c=$('lOtp').value.trim();lErr('');
+  if(!/^\d{6}$/.test(c)){lErr('6 digit OTP daalein.');return}
+  $('otpVerify').disabled=true;
+  try{
+    const r=await confirmation.confirm(c);
+    await createProfile(r.user,$('lName').value.trim(),$('lRef').value);
+    $('lOtp').value='';$('lStep1').hidden=false;$('lStep2').hidden=true;toast('Login ho gaya!');
+  }catch(e){console.error(e);lErr(e.code==='auth/invalid-verification-code'?'OTP galat hai.':e.code==='auth/code-expired'?'OTP expire ho gaya, dobara bhejein.':'Login nahi ho paya. Dobara try karein.')}
+  finally{$('otpVerify').disabled=false}
+};
+/* ---------- Email + Password Login ---------- */
+const eErr=m=>$('eErr').textContent=m||'';
+const emMsg=c=>({'auth/invalid-email':'Email sahi nahi hai.','auth/missing-email':'Email daalein.','auth/missing-password':'Password daalein.','auth/weak-password':'Password kam se kam 6 character ka rakhein.','auth/email-already-in-use':'Ye email pehle se registered hai. Login karein.','auth/invalid-credential':'Email ya password galat hai.','auth/user-not-found':'Email ya password galat hai.','auth/wrong-password':'Email ya password galat hai.','auth/too-many-requests':'Bahut zyada try ho gaye. Thodi der baad try karein.','auth/operation-not-allowed':'Firebase me Email/Password sign-in ON nahi hai.','auth/unauthorized-domain':'Ye domain Firebase me authorized nahi hai.','auth/network-request-failed':'Internet check karein.'}[c]||'Dikkat aayi ('+c+')');
+const emVals=()=>({em:$('eEmail').value.trim(),pw:$('ePass').value});
+$('emLogin').onclick=async()=>{
+  const {em,pw}=emVals();eErr('');
+  if(!em||!pw){eErr('Email aur password dono daalein.');return}
+  $('emLogin').disabled=true;
+  try{
+    const r=await signInWithEmailAndPassword(auth,em,pw);
+    if(r.user.email.toLowerCase()!==ADMIN_EMAIL.toLowerCase())await createProfile(r.user,$('eName').value.trim(),$('eRef').value);
+    $('ePass').value='';toast('Login ho gaya!');
+  }catch(e){console.error(e);eErr(emMsg(e.code))}
+  finally{$('emLogin').disabled=false}
+};
+$('emSignup').onclick=async()=>{
+  const {em,pw}=emVals();eErr('');
+  if(!em||!pw){eErr('Email aur password dono daalein.');return}
+  if(em.toLowerCase()===ADMIN_EMAIL.toLowerCase()){eErr('Is email se sign up nahi ho sakta.');return}
+  $('emSignup').disabled=true;
+  try{
+    const r=await createUserWithEmailAndPassword(auth,em,pw);
+    await createProfile(r.user,$('eName').value.trim(),$('eRef').value);
+    $('ePass').value='';toast('Account ban gaya!');
+  }catch(e){console.error(e);eErr(emMsg(e.code))}
+  finally{$('emSignup').disabled=false}
+};
+$('emReset').onclick=async ev=>{
+  ev.preventDefault();const em=$('eEmail').value.trim();eErr('');
+  if(!em){eErr('Pehle upar email daalein.');return}
+  try{await sendPasswordResetEmail(auth,em);toast('Reset link email par bhej diya')}
+  catch(e){console.error(e);eErr(emMsg(e.code))}
+};
+async function createProfile(u,name,refInput){
+  const ref=doc(db,'users',u.uid);if((await getDoc(ref)).exists())return;
+  let refBy='';const rc=(refInput||'').trim().toUpperCase();
+  if(rc){const r=await getDoc(doc(db,'refcodes',rc));if(r.exists()&&r.data().uid!==u.uid)refBy=r.data().uid}
+  let code='',n=0;
+  do{code=Math.random().toString(36).slice(2,8).toUpperCase();n++}while((await getDoc(doc(db,'refcodes',code))).exists()&&n<6);
+  const b=writeBatch(db);
+  b.set(ref,{phone:u.phoneNumber||u.email||'',email:u.email||'',name:name||'Player',balance:0,refCode:code,refBy,refPaid:false,lastSpin:0,redeemed:[],createdAt:Date.now()});
+  b.set(doc(db,'refcodes',code),{uid:u.uid});
+  await b.commit();
+}
+$('logoutBtn').onclick=()=>{signOut(auth);location.hash='#home'};
+
+/* ---------- Registration ---------- */
+const payUI=()=>{
+  const m=$('payMode').value,t=tById(regSel);
+  $('upiPanel').hidden=m!=='upi';$('walPanel').hidden=m!=='wallet';$('utrBox').hidden=m!=='upi';$('shotBox').hidden=m!=='upi';$('utrIn').required=m==='upi';
+  $('payAmt').textContent=t?money(t.fee):'';$('regFee').textContent=t?money(t.fee):'';$('regBal').textContent=money(me?me.balance:0);
+};
+function paintRegister(){
+  $('regLogin').hidden=!!user;
+  const open=T.filter(t=>!regWhy(t));
+  regSel=fillSel($('regT'),open.map(t=>({v:t.id,l:t.name+' — entry '+money(t.fee)})),regSel);
+  const none=!open.length;
+  $('regClosed').hidden=!none;$('regWhy').textContent=none?'Abhi koi tournament open nahi hai.':'';
+  $('regWrap').hidden=none||!user;
+  payUI();
+}
+$('regT').onchange=e=>{regSel=e.target.value;payUI()};$('payMode').onchange=payUI;
+$('regForm').onsubmit=async e=>{
+  e.preventDefault();const f=new FormData(e.target),err=$('regErr');err.textContent='';
+  if(!user){err.textContent='Pehle login karein.';return}
+  const t=tById(regSel),why=regWhy(t);if(why){err.textContent=why;return}
+  const mode=$('payMode').value;
+  const uids=[f.get('u1'),f.get('u2'),f.get('u3'),f.get('u4')].map(s=>s.trim());
+  if(new Set(uids).size<4){err.textContent='Sabhi 4 UIDs alag-alag honi chahiye.';return}
+  if(mode==='wallet'&&(!me||me.balance<t.fee)){err.textContent='Wallet balance kam hai. Pehle paise add karein.';return}
+  $('regBtn').disabled=true;
+  try{
+    const dupU=await getDocs(query(collection(db,'teams'),where('uids','array-contains-any',uids)));
+    if(dupU.docs.some(d=>d.data().tid===t.id&&!['rejected','banned'].includes(d.data().status))){err.textContent='Is tournament me in UID se pehle hi registration ho chuki hai (duplicate).';return}
+    const id='ISC-'+Math.random().toString(36).slice(2,8).toUpperCase();
+    const base={tid:t.id,uid:user.uid,name:f.get('name').trim(),captain:f.get('captain').trim(),wa:f.get('wa').trim(),uids,createdAt:Date.now(),payMode:mode};
+    if(mode==='upi'){
+      const utr=f.get('utr').trim();
+      const dupT=await getDocs(query(collection(db,'teams'),where('utr','==',utr)));
+      if(!dupT.empty){err.textContent='Ye UTR pehle use ho chuka hai.';return}
+      await setDoc(doc(db,'teams',id),{...base,utr,shot:await img64($('shot').files[0],800,.6),status:'pending',pay:'pending'});
+      $('doneMsg').textContent='Isse save kar lein. Payment verify hone ke baad "My Registration" me status dikhega.';
+    }else{
+      const uRef=doc(db,'users',user.uid);
+      await runTransaction(db,async tx=>{
+        const u=(await tx.get(uRef)).data();
+        if(u.balance<t.fee)throw new Error('low');
+        tx.update(uRef,{balance:u.balance-Number(t.fee)});
+        tx.set(doc(db,'teams',id),{...base,utr:'WALLET',shot:'',status:'approved',pay:'verified'});
+        logTx(tx,{uid:user.uid,phone:u.phone,type:'entry',amount:Number(t.fee),note:t.name+' ('+id+')'});
+      });
+      $('doneMsg').textContent='Entry fee wallet se kat gayi aur registration approve ho gayi. Isse save kar lein.';
+    }
+    $('doneId').textContent=id;$('regDone').hidden=false;$('regWrap').hidden=true;e.target.reset();
+  }catch(x){console.error(x);err.textContent=x.message==='low'?'Wallet balance kam hai.':'Submit nahi hua. Internet check karke dobara try karein.'}
+  finally{$('regBtn').disabled=false}
+};
+
+/* ---------- My Registration ---------- */
+const cls=v=>v==='approved'||v==='verified'?'ok':(v==='rejected'||v==='banned'?'no':'wait');
+function teamCard(t){
+  const tr=tById(t.tid)||{},show=t.status==='approved'&&tr.roomPub;
+  return `<div class="card"><h3>${esc(t.name)} <small class="muted">(${esc(t.id)})</small></h3><p class="muted" style="margin-bottom:8px">${esc(tr.name||'Tournament')}</p><table>
+<tr><th>Team Status</th><td class="${cls(t.status)}">${esc(t.status)}</td></tr>
+<tr><th>Payment Status</th><td class="${cls(t.pay)}">${esc(t.pay)}${t.payMode==='wallet'?' (wallet)':''}</td></tr>
+<tr><th>Verification</th><td class="${cls(t.status)}">${t.status==='approved'?'Verified':t.status==='pending'?'Pending':esc(t.status)}</td></tr>
+<tr><th>Room ID</th><td>${show?esc(tr.roomId):'Match se pehle share hoga'}</td></tr>
+<tr><th>Room Password</th><td>${show?esc(tr.roomPass):'Match se pehle share hoga'}</td></tr>
+<tr><th>Match Time</th><td>${esc(tr.date||'-')} ${esc(tr.time||'')}</td></tr></table></div>`;
+}
+function paintMy(){
+  const l=user?teams.filter(t=>t.uid===user.uid).reverse():[];
+  $('myList').innerHTML=user?(l.map(t=>teamCard({...t})).join('')||'<p class="muted">Aapne abhi tak koi registration nahi ki.</p>'):'<div class="card"><b class="wait">Apni saari registrations dekhne ke liye</b> <a class="btn sm" href="#login">Login karein</a></div>';
+}
+$('myBtn').onclick=async()=>{
+  const id=$('myId').value.trim().toUpperCase(),wa=$('myWa').value.trim(),out=$('myOut');out.innerHTML='';
+  try{
+    const s=await getDoc(doc(db,'teams',id));
+    if(!s.exists()||s.data().wa!==wa){out.innerHTML='<div class="card no">Registration nahi mili. Team ID aur WhatsApp number check karein.</div>';return}
+    out.innerHTML=teamCard({id,...s.data()});
+  }catch(x){console.error(x);out.innerHTML='<div class="card no">Check nahi ho paya. Dobara try karein.</div>'}
+};
+
+/* ---------- Wallet ---------- */
+const SGN={deposit:1,withdraw:-1,entry:-1,spin:1,redeem:1,referral:1,refund:1,admin:1};
+const TYN={deposit:'Deposit',withdraw:'Withdraw',entry:'Tournament Entry',spin:'Spin & Win',redeem:'Redeem Code',referral:'Referral',refund:'Refund',admin:'Admin Adjust'};
+function paintWallet(){
+  $('walGate').hidden=!!user;$('walBox').hidden=!user;
+  if(!user)return;
+  $('walBal').textContent=money(me?me.balance:0);$('walPhone').textContent=user.phoneNumber||user.email||'';
+  $('minWd').textContent='Minimum withdraw: '+money(S.minWithdraw)+' · Balance: '+money(me?me.balance:0);
+  $('hBody').innerHTML=myTx.map(x=>{const a=(SGN[x.type]||1)*Number(x.amount);const pend=x.status==='pending';
+    return `<tr><td>${fmt(x.at)}</td><td>${TYN[x.type]||x.type}${x.note?'<br><small class="muted">'+esc(x.note)+'</small>':''}</td><td class="${a<0?'no':'ok'}">${a<0?'-':'+'}${money(Math.abs(a))}</td><td class="${pend?'wait':x.status==='rejected'?'no':'ok'}">${esc(x.status)}</td></tr>`}).join('')||'<tr><td colspan="4" class="muted">Abhi koi transaction nahi.</td></tr>';
+}
+$('wTabs').onclick=e=>{const k=e.target.dataset.wt;if(!k)return;[...$('wTabs').children].forEach(b=>b.classList.toggle('on',b.dataset.wt===k));['add','out','hist'].forEach(x=>$('wt-'+x).hidden=x!==k)};
+$('depBtn').onclick=async()=>{
+  const amt=Math.floor(Number($('depAmt').value)),utr=$('depUtr').value.trim(),err=$('depErr');err.textContent='';
+  if(!user||!me)return;
+  if(!(amt>=Number(S.minDeposit))){err.textContent='Minimum deposit '+money(S.minDeposit)+' hai.';return}
+  if(!/^\d{12}$/.test(utr)){err.textContent='12 digit UTR daalein.';return}
+  $('depBtn').disabled=true;
+  try{
+    await addDoc(collection(db,'txns'),{uid:user.uid,phone:me.phone,type:'deposit',amount:amt,utr,shot:await img64($('depShot').files[0],800,.6),status:'pending',at:Date.now()});
+    $('depAmt').value='';$('depUtr').value='';$('depShot').value='';toast('Deposit request bhej di. Admin verify karega.');
+    $('wTabs').querySelector('[data-wt=hist]').click();
+  }catch(x){console.error(x);err.textContent='Request nahi gayi. Dobara try karein.'}
+  finally{$('depBtn').disabled=false}
+};
+$('wdBtn').onclick=async()=>{
+  const amt=Math.floor(Number($('wdAmt').value)),upi=$('wdUpi').value.trim(),err=$('wdErr');err.textContent='';
+  if(!user||!me)return;
+  if(!(amt>=Number(S.minWithdraw))){err.textContent='Minimum withdraw '+money(S.minWithdraw)+' hai.';return}
+  if(!/^[\w.\-]{2,}@[\w]{2,}$/.test(upi)){err.textContent='Sahi UPI ID daalein.';return}
+  $('wdBtn').disabled=true;
+  try{
+    const uRef=doc(db,'users',user.uid);
+    await runTransaction(db,async tx=>{
+      const u=(await tx.get(uRef)).data();if(u.balance<amt)throw new Error('low');
+      tx.update(uRef,{balance:u.balance-amt});
+      logTx(tx,{uid:user.uid,phone:u.phone,type:'withdraw',amount:amt,upi,status:'pending'});
+    });
+    $('wdAmt').value='';toast('Withdraw request bhej di.');$('wTabs').querySelector('[data-wt=hist]').click();
+  }catch(x){console.error(x);err.textContent=x.message==='low'?'Balance kam hai.':'Request nahi gayi. Dobara try karein.'}
+  finally{$('wdBtn').disabled=false}
+};
+
+/* ---------- Rewards: Spin / Redeem / Refer ---------- */
+const prizes=()=>String(S.spinPrizes).split(',').map(n=>Number(n.trim())).filter(n=>n>=0&&n<=Number(S.spinMax));
+let wheelKey='',rot=0;
+function buildWheel(){
+  const p=prizes();if(!p.length)p.push(0);const k=p.join(',');if(k===wheelKey)return;wheelKey=k;
+  const seg=360/p.length,cols=['#FFB800','#00E5FF','#00C853','#ff8a65','#b388ff','#f06292'];
+  $('wheel').style.background='conic-gradient('+p.map((_,i)=>cols[i%cols.length]+' '+i*seg+'deg '+(i+1)*seg+'deg').join(',')+')';
+  $('wheel').innerHTML=p.map((v,i)=>`<span style="transform:rotate(${(i+.5)*seg}deg) translate(-50%,-112px)">${v?'₹'+v:'0'}</span>`).join('');
+}
+function paintSpinTimer(){
+  if(!me||!$('spinBtn'))return;
+  const ms=(me.lastSpin||0)+864e5-Date.now(),b=$('spinBtn');
+  if(ms>0&&!spinning){b.disabled=true;const h=Math.floor(ms/36e5),m=Math.floor(ms/6e4)%60,s=Math.floor(ms/1e3)%60;b.textContent='Next spin: '+[h,m,s].map(x=>String(x).padStart(2,'0')).join(':')}
+  else if(!spinning){b.disabled=false;b.textContent='SPIN'}
+}
+let spinning=false;
+$('spinBtn').onclick=async()=>{
+  if(!user||!me||spinning)return;
+  const p=prizes();if(!p.length)return;
+  const idx=Math.floor(Math.random()*p.length),prize=p[idx];spinning=true;$('spinBtn').disabled=true;$('spinMsg').textContent='';
+  try{
+    const uRef=doc(db,'users',user.uid);
+    await runTransaction(db,async tx=>{
+      const u=(await tx.get(uRef)).data();
+      if(Date.now()-(u.lastSpin||0)<864e5)throw new Error('cool');
+      tx.update(uRef,{balance:u.balance+prize,lastSpin:Date.now()});
+      if(prize)logTx(tx,{uid:user.uid,phone:u.phone,type:'spin',amount:prize});
+    });
+    const seg=360/p.length;rot+=360*5+((360-(idx+.5)*seg)-(rot%360)+360)%360;
+    $('wheel').style.transform='rotate('+rot+'deg)';
+    setTimeout(()=>{spinning=false;$('spinMsg').innerHTML=prize?`🎉 Mubarak ho! Aapne <b class="ok">₹${prize}</b> jeete.`:'😅 Is baar kuch nahi mila. Kal phir try karein!';paintSpinTimer()},4400);
+  }catch(x){spinning=false;console.error(x);$('spinMsg').textContent=x.message==='cool'?'Spin 24 ghante baad milega.':'Spin nahi ho paya. Dobara try karein.';paintSpinTimer()}
+};
+$('rTabs').onclick=e=>{const k=e.target.dataset.rt;if(!k)return;[...$('rTabs').children].forEach(b=>b.classList.toggle('on',b.dataset.rt===k));['spin','redeem','refer'].forEach(x=>$('rt-'+x).hidden=x!==k)};
+$('rcBtn').onclick=async()=>{
+  const code=$('rcIn').value.trim().toUpperCase(),m=$('rcMsg');m.className='no';m.textContent='';
+  if(!user||!me)return;if(!/^[A-Z0-9]{3,20}$/.test(code)){m.textContent='Sahi code daalein.';return}
+  $('rcBtn').disabled=true;
+  try{
+    const cRef=doc(db,'codes',code),uRef=doc(db,'users',user.uid);let amt=0;
+    await runTransaction(db,async tx=>{
+      const c=await tx.get(cRef),u=(await tx.get(uRef)).data();
+      if(!c.exists()||!c.data().active)throw new Error('Ye code sahi nahi hai.');
+      const d=c.data();if(d.used>=d.maxUses)throw new Error('Ye code ki limit khatam ho gayi.');
+      if((u.redeemed||[]).includes(code))throw new Error('Aap ye code pehle use kar chuke hain.');
+      amt=Number(d.amount);
+      tx.update(cRef,{used:d.used+1});
+      tx.update(uRef,{balance:u.balance+amt,redeemed:[...(u.redeemed||[]),code]});
+      logTx(tx,{uid:user.uid,phone:u.phone,type:'redeem',amount:amt,note:code});
+    });
+    m.className='ok';m.textContent='🎉 '+money(amt)+' wallet me add ho gaye!';$('rcIn').value='';
+  }catch(x){console.error(x);m.textContent=x.message&&x.code===undefined&&!/permission|insufficient/i.test(x.message)?x.message:'Code redeem nahi ho paya.'}
+  finally{$('rcBtn').disabled=false}
+};
+function paintRewards(){
+  $('rwGate').hidden=!!user;$('rwBox').hidden=!user;if(!user)return;
+  buildWheel();paintSpinTimer();
+  $('refTxt').textContent=`Dost ke pehle approved deposit par aapko ${money(S.refReward)} milenge aur dost ko ${money(S.refBonus)}.`;
+  const code=me?me.refCode:'',link=location.origin+location.pathname+'?ref='+code;
+  $('refCode').value=code;$('refLink').value=link;
+  $('refEarn').value=money(myTx.filter(x=>x.type==='referral'&&x.status==='done').reduce((s,x)=>s+Number(x.amount),0));
+  $('refWa').href='https://wa.me/?text='+encodeURIComponent('Free Fire tournament khelo aur jeeto! Mere referral code '+code+' se join karo: '+link);
+}
+$('refCopy').onclick=()=>copy('refLink');
+
+/* ---------- Notifications ---------- */
+function paintNotes(){
+  const seen=Number(lsGet('seenAt')||0),un=notes.filter(n=>n.at>seen).length;
+  const b=$('bellN');b.textContent=un;b.hidden=!un||location.hash==='#notes';
+  $('noteBox').innerHTML=notes.map(n=>`<div class="note"><b>${esc(n.title||'Notification')}</b><br>${esc(n.text)}<br><small class="muted">${fmt(n.at)}${n.to==='all'?'':' · personal'}</small></div>`).join('')||'<p class="muted">Abhi koi notification nahi hai.</p>';
+}
+
+/* ====================== ADMIN ====================== */
+const TF=[['name','Tournament Name'],['fee','Entry Fee (₹)','number'],['winPrize','Winner Prize (₹)','number'],['runPrize','Runner-up Prize (₹)','number'],['limit','Team Limit','number'],['date','Match Date','date'],['time','Match Time','time'],['map','Map','select'],['deadline','Registration Deadline','datetime-local'],['points','Points (rank 1..12, comma)'],['perKill','Per Kill Points','number']];
+const CF=[['whatsapp','WhatsApp Support Number'],['upi','UPI ID'],['channel','WhatsApp Channel Link'],['group','WhatsApp Group Link'],['telegram','Telegram Link'],['insta','Instagram Link'],['email','Email']];
+const WF=[['refReward','Referrer Reward (₹)','number'],['refBonus','Referred User Bonus (₹)','number'],['spinPrizes','Spin Prizes (comma, ₹)'],['spinMax','Spin Max Prize (₹)','number'],['minDeposit','Minimum Deposit (₹)','number'],['minWithdraw','Minimum Withdraw (₹)','number']];
+const TABS=['Dashboard','Tournaments','Teams','Payments','Deposits','Withdrawals','Users','Room','Results','Hall of Fame','Announcements','Notifications','Codes','Content','Settings','Export'];
+let tab='Dashboard',adminT='',aq='';
+$('aLogin').onclick=async()=>{try{await signInWithEmailAndPassword(auth,$('aEmail').value,$('aPass').value);$('aErr').textContent=''}catch{$('aErr').textContent='Email ya password galat hai.'}};
+$('aOut').onclick=()=>signOut(auth);
+const save=async(o,m='Saved')=>{await setDoc(doc(db,'settings','main'),o,{merge:true});toast(m)};
+const fld=(k,l,t='text',v=S[k])=>t==='select'?`<label>${l}</label><select data-k="${k}">${['Bermuda','Purgatory','Kalahari','Alpine','NeXTerra','Solara'].map(m=>`<option ${m===v?'selected':''}>${m}</option>`).join('')}</select>`:`<label>${l}</label><input data-k="${k}" type="${t}" value="${esc(v)}">`;
+function grab(root){const o={};root.querySelectorAll('[data-k]').forEach(i=>{const k=i.dataset.k;o[k]=i.type==='checkbox'?i.checked:i.type==='number'?Number(i.value):i.value});return o}
+const fileSet=(k,l,max)=>`<label>${l}</label><input type="file" accept="image/*" data-file="${k}" data-max="${max||700}">`;
+const curTour=()=>tById(adminT)||T[0]||null;
+const tSel=(all)=>`<label>Tournament</label><select data-ts>${all?'<option value="">Sabhi</option>':''}${T.map(t=>`<option value="${t.id}" ${t.id===(all?adminT:(curTour()||{}).id)?'selected':''}>${esc(t.name)}</option>`).join('')}</select>`;
+const tName=id=>(tById(id)||{}).name||'-';
+const stc=v=>v==='approved'||v==='verified'||v==='paid'||v==='done'?'ok':v==='pending'?'wait':'no';
+
+async function adj(uid,delta,type,note,extra={}){
+  const uRef=doc(db,'users',uid);
+  await runTransaction(db,async tx=>{const u=(await tx.get(uRef)).data();if(u.balance+delta<0)throw new Error('Balance negative nahi ho sakta');tx.update(uRef,{balance:u.balance+delta});logTx(tx,{uid,phone:u.phone,type,amount:delta,note,...extra})});
+}
+async function approveDep(id){
+  const tr=txns.find(x=>x.id===id),tRef=doc(db,'txns',id),uRef=doc(db,'users',tr.uid);
+  await runTransaction(db,async tx=>{
+    const ts=await tx.get(tRef);if(ts.data().status!=='pending')throw new Error('Pehle hi process ho chuka hai');
+    const u=(await tx.get(uRef)).data(),first=u.refBy&&!u.refPaid;
+    const rs=first?await tx.get(doc(db,'users',u.refBy)):null;
+    const add=Number(tr.amount),bonus=first?Number(S.refBonus)||0:0;
+    tx.update(tRef,{status:'approved'});
+    tx.update(uRef,first?{balance:u.balance+add+bonus,refPaid:true}:{balance:u.balance+add});
+    if(first){
+      if(bonus)logTx(tx,{uid:tr.uid,phone:u.phone,type:'referral',amount:bonus,note:'Referral bonus'});
+      const rw=Number(S.refReward)||0;
+      if(rs.exists()){tx.update(rs.ref,{balance:rs.data().balance+rw});if(rw)logTx(tx,{uid:u.refBy,phone:rs.data().phone,type:'referral',amount:rw,note:'Referral reward'})}
+    }
+  });
+  notify(tr.uid,'Deposit approve ho gaya','Aapke '+money(tr.amount)+' wallet me add kar diye gaye hain.');
+}
+async function rejectDep(id){
+  const tr=txns.find(x=>x.id===id);await updateDoc(doc(db,'txns',id),{status:'rejected'});
+  notify(tr.uid,'Deposit reject hua','Aapka '+money(tr.amount)+' ka deposit verify nahi ho paya. Support se contact karein.');
+}
+async function wdPaid(id){const tr=txns.find(x=>x.id===id);await updateDoc(doc(db,'txns',id),{status:'paid'});notify(tr.uid,'Withdraw paid','Aapke '+money(tr.amount)+' UPI '+tr.upi+' par bhej diye gaye hain.')}
+async function wdReject(id){
+  const tr=txns.find(x=>x.id===id),tRef=doc(db,'txns',id),uRef=doc(db,'users',tr.uid);
+  await runTransaction(db,async tx=>{
+    const ts=await tx.get(tRef);if(ts.data().status!=='pending')throw new Error('Pehle hi process ho chuka hai');
+    const u=(await tx.get(uRef)).data();tx.update(tRef,{status:'rejected'});tx.update(uRef,{balance:u.balance+Number(tr.amount)});
+    logTx(tx,{uid:tr.uid,phone:u.phone,type:'refund',amount:Number(tr.amount),note:'Withdraw reject'});
+  });
+  notify(tr.uid,'Withdraw reject hua',money(tr.amount)+' wapas aapke wallet me aa gaye hain.');
+}
+
+function adminRender(){
+  $('aHello').textContent='Namaste, '+S.adminName;
+  $('aTabs').innerHTML=TABS.map(t=>{const c=t==='Deposits'?txns.filter(x=>x.type==='deposit'&&x.status==='pending').length:t==='Withdrawals'?txns.filter(x=>x.type==='withdraw'&&x.status==='pending').length:0;return `<button class="${t===tab?'on':''}" data-t="${t}">${t}${c?`<span class="badge">${c}</span>`:''}</button>`}).join('');
+  $('aTabs').onclick=e=>{const b=e.target.closest('[data-t]');if(b){tab=b.dataset.t;adminRender()}};
+  const B=$('aBody');B.onchange=e=>{if(e.target.dataset.ts!==undefined){adminT=e.target.value;adminRender()}};
+  const tl=l=>l.map(x=>`<tr><td>${esc(x.name)}</td><td>${esc(tName(x.tid))}</td><td>${esc(x.captain)}</td><td>${esc(x.wa)}</td><td>${x.uids.join(', ')}</td><td>${esc(x.utr)}</td><td class="${stc(x.status)}">${x.status}</td><td class="${stc(x.pay)}">${x.pay}</td></tr>`).join('');
+  const dl=(n,rows)=>{const c=rows.map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\n'),a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['﻿'+c],{type:'text/csv'}));a.download=n;a.click()};
+  const run=async f=>{try{await f();toast('Done')}catch(x){console.error(x);toast(x.message||'Error')}};
+  B.onclick=null;
+
+  if(tab==='Dashboard'){
+    const ap=teams.filter(t=>t.status==='approved'),pe=teams.filter(t=>t.status==='pending'),rj=teams.filter(t=>t.status==='rejected');
+    const fees=teams.filter(t=>t.pay==='verified').reduce((s,t)=>s+Number((tById(t.tid)||{}).fee||0),0);
+    const dep=txns.filter(x=>x.type==='deposit'&&x.status==='approved').reduce((s,x)=>s+Number(x.amount),0);
+    const wd=txns.filter(x=>x.type==='withdraw'&&x.status==='paid').reduce((s,x)=>s+Number(x.amount),0);
+    const hold=usersAll.reduce((s,u)=>s+Number(u.balance||0),0);
+    B.innerHTML=`<div class="grid">${[['Tournaments',T.length],['Users',usersAll.length],['Total Teams',teams.length],['Total Players',teams.length*4],['Entry Fees (verified)',money(fees)],['Deposits Approved',money(dep)],['Withdrawals Paid',money(wd)],['User Wallets Total',money(hold)],['Pending Deposits',txns.filter(x=>x.type==='deposit'&&x.status==='pending').length],['Pending Withdrawals',txns.filter(x=>x.type==='withdraw'&&x.status==='pending').length],['Teams Pending',pe.length],['Approved',ap.length],['Rejected',rj.length]].map(x=>`<div class="stat"><b>${x[1]}</b><span>${x[0]}</span></div>`).join('')}</div><h2>Recent Registrations</h2><div class="card tw"><table><tr><th>Team</th><th>Tournament</th><th>Captain</th><th>WhatsApp</th><th>UIDs</th><th>UTR</th><th>Team</th><th>Pay</th></tr>${tl([...teams].reverse().slice(0,8))}</table></div>`;
+  }
+  if(tab==='Tournaments'){
+    const e=tById(B.dataset.edit)||{...TDEF};
+    B.innerHTML=`<div class="card" id="fm"><h3>${e.id?'Edit: '+esc(e.name):'Naya Tournament'}</h3><div class="two">${TF.map(f=>`<div>${fld(f[0],f[1],f[2]||'text',e[f[0]]??TDEF[f[0]])}</div>`).join('')}</div><label><input type="checkbox" data-k="open" ${e.open!==false?'checked':''}>Registration Open</label><button class="btn" id="sv" style="margin-top:12px">${e.id?'Update':'Create'} Tournament</button>${e.id?' <button class="btn alt" id="nw" style="margin-top:12px">Naya banayein</button>':''}</div>${[...T].reverse().map(t=>`<div class="card row"><div><b>${esc(t.name)}</b> <span class="muted">· ${money(t.fee)} · ${t.date||'date TBA'} · ${tTeams(t).length}/${t.limit} teams · ${tState(t)}</span></div><div><button class="btn sm alt" data-ed="${t.id}">Edit</button> <button class="btn sm red" data-del="${t.id}">Delete</button></div></div>`).join('')}`;
+    $('sv').onclick=()=>run(async()=>{const o=grab($('fm'));if(!o.name.trim())throw new Error('Tournament ka naam daalein');if(e.id)await updateDoc(doc(db,'tournaments',e.id),o);else{await addDoc(collection(db,'tournaments'),{...o,roomId:'',roomPass:'',roomPub:false,res:null,createdAt:Date.now()});delete B.dataset.edit;adminRender()}});
+    if($('nw'))$('nw').onclick=()=>{delete B.dataset.edit;adminRender()};
+    B.onclick=e=>{const d=e.target.dataset;if(d.ed){B.dataset.edit=d.ed;adminRender();scrollTo(0,0)}if(d.del&&confirm('Tournament delete karein? Teams ka data rahega.'))run(()=>deleteDoc(doc(db,'tournaments',d.del)))};
+  }
+  if(tab==='Teams'||tab==='Payments'){
+    const q=aq.toLowerCase(),l=teams.filter(t=>(!adminT||t.tid===adminT)&&[t.name,t.captain,t.wa,t.utr,t.id].join(' ').toLowerCase().includes(q));
+    B.innerHTML=`<div class="two"><div>${tSel(true)}</div><div><label>Search</label><input id="aq" placeholder="Team / captain / UTR" value="${esc(aq)}"></div></div><div style="margin-top:12px">${l.map(t=>`<div class="card"><b>${esc(t.name)}</b> <small>(${t.id})</small> — <span class="${stc(t.status)}">${t.status}</span> / <span class="${stc(t.pay)}">pay: ${t.pay}${t.payMode==='wallet'?' (wallet)':''}</span><br><small class="muted">${esc(tName(t.tid))}<br>Captain: ${esc(t.captain)} · WA: ${esc(t.wa)}<br>UIDs: ${t.uids.join(', ')}<br>UTR: <b>${esc(t.utr)}</b></small>${tab==='Payments'&&t.shot?`<br><a href="${t.shot}" target="_blank"><img src="${t.shot}" alt="" style="max-height:140px;margin-top:8px;border-radius:8px"></a>`:''}<div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap">${tab==='Payments'?`<button class="btn sm grn" data-a="verify" data-id="${t.id}">Verify Payment</button><button class="btn sm red" data-a="rejpay" data-id="${t.id}">Reject Payment</button>`:`<button class="btn sm grn" data-a="approve" data-id="${t.id}">Approve</button><button class="btn sm red" data-a="reject" data-id="${t.id}">Reject</button><button class="btn sm red" data-a="ban" data-id="${t.id}">Ban</button><button class="btn sm alt" data-a="edit" data-id="${t.id}">Edit</button><button class="btn sm red" data-a="del" data-id="${t.id}">Delete</button>`}</div></div>`).join('')||'<p>Koi team nahi.</p>'}</div>`;
+    $('aq').oninput=e=>{aq=e.target.value;adminRender();$('aq').focus()};
+    B.onclick=e=>{const a=e.target.dataset.a,id=e.target.dataset.id;if(!a)return;const r=doc(db,'teams',id),t=teams.find(x=>x.id===id);
+      run(async()=>{
+        const refund=async()=>{if(t.payMode==='wallet'&&t.pay==='verified'&&t.uid&&confirm('Entry fee wallet me refund karein?'))await adj(t.uid,Number((tById(t.tid)||{}).fee||0),'refund','Team '+t.id+' reject')};
+        if(a==='verify'){await updateDoc(r,{pay:'verified',status:'approved'});t.uid&&notify(t.uid,'Registration approve','Aapki team '+t.name+' approve ho gayi hai.')}
+        if(a==='rejpay'){await updateDoc(r,{pay:'rejected',status:'rejected'});t.uid&&notify(t.uid,'Payment reject','Team '+t.name+' ka payment verify nahi hua.')}
+        if(a==='approve'){await updateDoc(r,{status:'approved'});t.uid&&notify(t.uid,'Registration approve','Aapki team '+t.name+' approve ho gayi hai.')}
+        if(a==='reject'){await updateDoc(r,{status:'rejected'});await refund();t.uid&&notify(t.uid,'Registration reject','Team '+t.name+' reject ho gayi hai.')}
+        if(a==='ban')await updateDoc(r,{status:'banned'});
+        if(a==='edit'){const n=prompt('Team name',t.name);if(n)await updateDoc(r,{name:n});const c=prompt('Captain name',t.captain);if(c)await updateDoc(r,{captain:c})}
+        if(a==='del'&&confirm('Team delete karein?'))await deleteDoc(r);
+      })};
+  }
+  if(tab==='Deposits'){
+    const l=txns.filter(x=>x.type==='deposit'),cnt={};l.forEach(x=>cnt[x.utr]=(cnt[x.utr]||0)+1);
+    const order={pending:0,approved:1,rejected:2};
+    B.innerHTML=[...l].sort((a,b)=>order[a.status]-order[b.status]||b.at-a.at).map(x=>`<div class="card"><b>${money(x.amount)}</b> — ${esc(x.phone)} <span class="${stc(x.status)}">${x.status}</span><br><small class="muted">UTR: <b>${esc(x.utr)}</b>${cnt[x.utr]>1?' <b class="no">⚠ duplicate UTR</b>':''} · ${fmt(x.at)}</small>${x.shot?`<br><a href="${x.shot}" target="_blank"><img src="${x.shot}" alt="" style="max-height:140px;margin-top:8px;border-radius:8px"></a>`:''}${x.status==='pending'?`<div style="margin-top:10px;display:flex;gap:6px"><button class="btn sm grn" data-ap="${x.id}">Approve</button><button class="btn sm red" data-rj="${x.id}">Reject</button></div>`:''}</div>`).join('')||'<p>Koi deposit request nahi.</p>';
+    B.onclick=e=>{const d=e.target.dataset;if(d.ap)run(()=>approveDep(d.ap));if(d.rj)run(()=>rejectDep(d.rj))};
+  }
+  if(tab==='Withdrawals'){
+    const l=txns.filter(x=>x.type==='withdraw'),order={pending:0,paid:1,rejected:2};
+    B.innerHTML=[...l].sort((a,b)=>order[a.status]-order[b.status]||b.at-a.at).map(x=>`<div class="card"><b>${money(x.amount)}</b> — ${esc(x.phone)} <span class="${stc(x.status)}">${x.status}</span><br><small class="muted">UPI: <b>${esc(x.upi)}</b> · ${fmt(x.at)}</small>${x.status==='pending'?`<div style="margin-top:10px;display:flex;gap:6px"><button class="btn sm grn" data-pd="${x.id}">Mark Paid</button><button class="btn sm red" data-rj="${x.id}">Reject &amp; Refund</button></div>`:''}</div>`).join('')||'<p>Koi withdraw request nahi.</p>';
+    B.onclick=e=>{const d=e.target.dataset;if(d.pd&&confirm('UPI se paisa bhej diya? Tabhi Mark Paid karein.'))run(()=>wdPaid(d.pd));if(d.rj&&confirm('Reject karke balance wapas karein?'))run(()=>wdReject(d.rj))};
+  }
+  if(tab==='Users'){
+    const q=aq.toLowerCase(),l=usersAll.filter(u=>[u.phone,u.name,u.refCode].join(' ').toLowerCase().includes(q)).sort((a,b)=>b.createdAt-a.createdAt);
+    B.innerHTML=`<label style="margin-top:0">Search</label><input id="aq" placeholder="Phone / naam / referral code" value="${esc(aq)}"><div style="margin-top:12px">${l.map(u=>`<div class="card row"><div><b>${esc(u.name)}</b> · ${esc(u.phone)}<br><small class="muted">Balance: <b class="ok">${money(u.balance)}</b> · Ref code: ${esc(u.refCode)}${u.refBy?' · referred':''} · Joined ${fmt(u.createdAt)}</small></div><button class="btn sm alt" data-bal="${u.id}">± Balance</button></div>`).join('')||'<p>Koi user nahi.</p>'}</div>`;
+    $('aq').oninput=e=>{aq=e.target.value;adminRender();$('aq').focus()};
+    B.onclick=e=>{const id=e.target.dataset.bal;if(!id)return;const v=Number(prompt('Kitna add karna hai? (kam karne ke liye minus, jaise -20)'));if(!v)return;const note=prompt('Reason (optional)')||'';run(()=>adj(id,v,'admin',note))};
+  }
+  if(tab==='Room'){
+    const t=curTour();
+    B.innerHTML=t?`${tSel()}<div class="card" id="fm">${fld('roomId','Room ID','text',t.roomId)}${fld('roomPass','Room Password','text',t.roomPass)}<label><input type="checkbox" data-k="roomPub" ${t.roomPub?'checked':''}>Publish Room (approved teams ko dikhega)</label><button class="btn" id="sv" style="margin-top:12px">Save Room</button></div>`:'<p>Pehle tournament banayein.</p>';
+    if(t)$('sv').onclick=()=>run(()=>updateDoc(doc(db,'tournaments',t.id),grab($('fm'))));
+  }
+  if(tab==='Results'){
+    const t=curTour();
+    if(!t){B.innerHTML='<p>Pehle tournament banayein.</p>'}else{
+    const R=t.res||{},ap=teams.filter(x=>x.tid===t.id&&x.status==='approved'),old=Object.fromEntries((R.rows||[]).map(r=>[r.id,r]));
+    B.innerHTML=`${tSel()}<div class="card tw"><table><tr><th>Team</th><th>Placement</th><th>Kills</th><th>Points</th></tr>${ap.map(x=>`<tr data-id="${x.id}" data-n="${esc(x.name)}"><td>${esc(x.name)}</td><td><input type="number" min="1" max="${t.limit}" class="pl" value="${old[x.id]?.placement===99?'':old[x.id]?.placement??''}"></td><td><input type="number" min="0" class="kl" value="${old[x.id]?.kills??0}"></td><td class="pt">${old[x.id]?.points??0}</td></tr>`).join('')||'<tr><td>Pehle teams approve karein.</td></tr>'}</table>
+    <label>Match MVP</label><input id="mvp" value="${esc(R.mvp||'')}">${fileSet('shot','Match Screenshot',1000)}
+    <label>Points (editable: rank 1..12)</label><input id="pp" value="${esc(t.points)}"><label>Per Kill Points</label><input id="pk" type="number" value="${t.perKill}">
+    <p class="muted" style="margin-top:8px">Status: ${R.published?'<b class="ok">Published</b>':'Not published'}</p>
+    <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn alt" id="calc">Auto Calculate</button><button class="btn" id="pub">Publish Results</button><button class="btn red" id="unp">Unpublish</button></div></div>`;
+    const calc=()=>{const P=String($('pp').value).split(',').map(n=>Number(n)||0),K=Number($('pk').value)||0;return [...B.querySelectorAll('tr[data-id]')].map(tr=>{const p=Number(tr.querySelector('.pl').value)||0,k=Number(tr.querySelector('.kl').value)||0,pt=(p?(P[p-1]??0):0)+k*K;tr.querySelector('.pt').textContent=pt;return{id:tr.dataset.id,name:tr.dataset.n,placement:p||99,kills:k,points:pt}})};
+    $('calc').onclick=calc;
+    $('pub').onclick=()=>run(async()=>{const rows=calc(),w=rows.find(r=>r.placement===1),r2=rows.find(r=>r.placement===2);
+      await setDoc(doc(db,'tournaments',t.id),{points:$('pp').value,perKill:Number($('pk').value)||0,res:{rows,winner:w?.name||'',runner:r2?.name||'',mvp:$('mvp').value,published:true}},{merge:true});
+      const ids=[w,r2].filter(Boolean).map(r=>teams.find(x=>x.id===r.id)).filter(x=>x&&x.uid);
+      ids.forEach(x=>notify(x.uid,'Result publish ho gaya',t.name+' ka result aa gaya hai. Leaderboard dekhein!'))});
+    $('unp').onclick=()=>run(()=>setDoc(doc(db,'tournaments',t.id),{res:{published:false}},{merge:true}));
+    }
+  }
+  if(tab==='Hall of Fame'){
+    B.innerHTML=`<div class="card" id="hf"><div class="two"><div><label>Team / Winner</label><input id="hT"></div><div><label>Prize Won (₹)</label><input id="hP"></div><div><label>Tournament Date</label><input id="hD" type="date"></div></div><label>Winner Image</label><input type="file" id="hI" accept="image/*"><button class="btn" id="hA" style="margin-top:12px">Add Winner</button></div>${hall.map(h=>`<div class="card">${esc(h.team)} — ₹${esc(h.prize)} (${esc(h.date)}) <button class="btn sm red" data-del="${h.id}">Delete</button></div>`).join('')}`;
+    $('hA').onclick=()=>run(async()=>{if(!$('hT').value)return;await addDoc(collection(db,'hall'),{team:$('hT').value,prize:$('hP').value,date:$('hD').value,img:await img64($('hI').files[0],600),at:Date.now()})});
+    B.onclick=e=>{if(e.target.dataset.del)run(()=>deleteDoc(doc(db,'hall',e.target.dataset.del)))};
+  }
+  if(tab==='Announcements'){
+    B.innerHTML=`<div class="card"><label>New Announcement</label><textarea id="nA" rows="2"></textarea><button class="btn" id="aA" style="margin-top:10px">Add</button></div>${anns.map(a=>`<div class="card">${a.pin?'📌 ':''}${esc(a.text)}<div style="margin-top:8px;display:flex;gap:6px"><button class="btn sm alt" data-pin="${a.id}">${a.pin?'Unpin':'Pin'}</button><button class="btn sm alt" data-ed="${a.id}">Edit</button><button class="btn sm red" data-del="${a.id}">Delete</button></div></div>`).join('')}`;
+    $('aA').onclick=()=>run(async()=>{if(!$('nA').value.trim())return;await addDoc(collection(db,'announcements'),{text:$('nA').value.trim(),pin:false,at:Date.now()})});
+    B.onclick=e=>{const d=e.target.dataset,a=anns.find(x=>x.id===(d.pin||d.ed||d.del));if(!a)return;run(async()=>{if(d.pin)await updateDoc(doc(db,'announcements',a.id),{pin:!a.pin});if(d.ed){const t=prompt('Edit',a.text);if(t)await updateDoc(doc(db,'announcements',a.id),{text:t})}if(d.del)await deleteDoc(doc(db,'announcements',a.id))})};
+  }
+  if(tab==='Notifications'){
+    B.innerHTML=`<div class="card"><label>Title</label><input id="nT" maxlength="60"><label>Message</label><textarea id="nM" rows="2"></textarea><label>Kisko bhejna hai? (khaali = sabko; ya user ka 10 digit mobile)</label><input id="nP" inputmode="numeric" maxlength="10" placeholder="khaali = sabhi users"><button class="btn" id="nS" style="margin-top:10px">Send Notification</button></div>${allNotes.map(n=>`<div class="card"><b>${esc(n.title)}</b><br>${esc(n.text)}<br><small class="muted">${fmt(n.at)} · ${n.to==='all'?'Sabhi':esc((usersAll.find(u=>u.id===n.to)||{}).phone||n.to)}</small> <button class="btn sm red" data-del="${n.id}" style="float:right">Delete</button></div>`).join('')}`;
+    $('nS').onclick=()=>run(async()=>{const p=$('nP').value.trim(),m=$('nM').value.trim();if(!m)throw new Error('Message likhein');let to='all';if(p){const u=usersAll.find(x=>String(x.phone).endsWith(p));if(!u)throw new Error('Is number ka user nahi mila');to=u.id}
+      await addDoc(collection(db,'notifications'),{to,title:$('nT').value.trim()||'Notification',text:m,at:Date.now()});$('nM').value='';$('nT').value=''});
+    B.onclick=e=>{if(e.target.dataset.del)run(()=>deleteDoc(doc(db,'notifications',e.target.dataset.del)))};
+  }
+  if(tab==='Codes'){
+    B.innerHTML=`<div class="card"><div class="two"><div><label>Code (A-Z, 0-9)</label><input id="cC" maxlength="20" style="text-transform:uppercase"></div><div><label>Amount (₹)</label><input id="cA" type="number" min="1"></div><div><label>Max Uses (kitne log)</label><input id="cM" type="number" min="1" value="10"></div></div><button class="btn" id="cS" style="margin-top:12px">Code Banayein</button></div>`;
+    getDocs(collection(db,'codes')).then(s=>{if(tab!=='Codes')return;B.insertAdjacentHTML('beforeend',s.docs.map(d=>{const c=d.data();return `<div class="card row"><div><b>${esc(d.id)}</b> — ${money(c.amount)} · ${c.used}/${c.maxUses} use · <span class="${c.active?'ok':'no'}">${c.active?'Active':'Off'}</span></div><div><button class="btn sm alt" data-tg="${d.id}" data-on="${c.active?1:0}">${c.active?'Disable':'Enable'}</button> <button class="btn sm red" data-del="${d.id}">Delete</button></div></div>`}).join('')||'<p>Koi code nahi.</p>')},must);
+    $('cS').onclick=()=>run(async()=>{const c=$('cC').value.trim().toUpperCase(),a=Number($('cA').value),m=Number($('cM').value);if(!/^[A-Z0-9]{3,20}$/.test(c)||!(a>0)||!(m>0))throw new Error('Code, amount aur uses sahi daalein');await setDoc(doc(db,'codes',c),{amount:a,maxUses:m,used:0,active:true,at:Date.now()});adminRender()});
+    B.onclick=e=>{const d=e.target.dataset;if(d.tg)run(async()=>{await updateDoc(doc(db,'codes',d.tg),{active:d.on!=='1'});adminRender()});if(d.del&&confirm('Code delete karein?'))run(async()=>{await deleteDoc(doc(db,'codes',d.del));adminRender()})};
+  }
+  if(tab==='Content'){
+    B.innerHTML=`<div class="card" id="fm">${[['cRules','Rules'],['cRefund','Refund Policy'],['cPrivacy','Privacy Policy'],['cTerms','Terms & Conditions']].map(x=>`<label>${x[1]}</label><textarea rows="7" data-k="${x[0]}">${esc(S[x[0]])}</textarea>`).join('')}<button class="btn" id="sv" style="margin-top:12px">Save Content</button></div>`;
+    $('sv').onclick=()=>run(()=>save(grab($('fm'))));
+  }
+  if(tab==='Settings'){
+    B.innerHTML=`<div class="card" id="fm"><h3>Site</h3>${fld('name','Site / Series Name')}${fld('org','Organizer Name')}${fileSet('logo','Logo Upload / Change',200)}<h3 style="margin-top:16px">Contact &amp; Payment</h3>${CF.map(f=>fld(f[0],f[1])).join('')}${fileSet('qr','Upload / Replace UPI QR',500)}${fileSet('banner','Homepage Banner',1200)}<div class="two"><div>${fld('primary','Primary Color (Gold)','color')}</div><div>${fld('secondary','Secondary Color (Cyan)','color')}</div></div><h3 style="margin-top:16px">Wallet, Referral &amp; Spin</h3><div class="two">${WF.map(f=>`<div>${fld(f[0],f[1],f[2]||'text')}</div>`).join('')}</div><p class="muted">Spin prizes me koi bhi value Spin Max se zyada nahi honi chahiye.</p><button class="btn" id="sv" style="margin-top:12px">Save Settings</button></div>
+    <div class="card"><h3>Admin Account</h3>${fld('adminName','Admin Name')}<button class="btn sm" id="sn" style="margin-top:8px">Save Name</button><label>New Password</label><input id="np" type="password" minlength="6"><button class="btn sm" id="sp" style="margin-top:8px">Change Password</button></div>`;
+    $('sv').onclick=()=>run(()=>save(grab($('fm'))));
+    $('sn').onclick=()=>run(()=>save({adminName:B.querySelector('[data-k=adminName]').value}));
+    $('sp').onclick=async()=>{try{await updatePassword(auth.currentUser,$('np').value);toast('Password changed')}catch{toast('Dobara login karke try karein')}};
+  }
+  if(tab==='Export'){
+    B.innerHTML=`<div class="card" style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="e1">Teams (CSV)</button><button class="btn" id="e2">Payments (CSV)</button><button class="btn" id="e3">Results (CSV)</button><button class="btn" id="e4">Users (CSV)</button><button class="btn" id="e5">Transactions (CSV)</button></div>`;
+    $('e1').onclick=()=>dl('teams.csv',[['TeamID','Tournament','Team','Captain','WhatsApp','UID1','UID2','UID3','UID4','Status'],...teams.map(t=>[t.id,tName(t.tid),t.name,t.captain,t.wa,...t.uids,t.status])]);
+    $('e2').onclick=()=>dl('payments.csv',[['TeamID','Team','Tournament','UTR','Mode','Payment','Amount'],...teams.map(t=>[t.id,t.name,tName(t.tid),t.utr,t.payMode||'upi',t.pay,(tById(t.tid)||{}).fee])]);
+    $('e3').onclick=()=>dl('results.csv',[['Tournament','Team','Placement','Kills','Points'],...T.flatMap(t=>((t.res&&t.res.rows)||[]).map(r=>[t.name,r.name,r.placement,r.kills,r.points]))]);
+    $('e4').onclick=()=>dl('users.csv',[['Phone','Name','Balance','RefCode','Joined'],...usersAll.map(u=>[u.phone,u.name,u.balance,u.refCode,fmt(u.createdAt)])]);
+    $('e5').onclick=()=>dl('transactions.csv',[['Date','Phone','Type','Amount','Status','UTR/UPI','Note'],...txns.map(x=>[fmt(x.at),x.phone,x.type,x.amount,x.status,x.utr||x.upi||'',x.note||''])]);
+  }
+}
+/* file inputs inside admin (logo, qr, banner, results screenshot) */
+document.addEventListener('change',async e=>{
+  const i=e.target,k=i.dataset?.file;if(!k||!isAdmin)return;
+  try{
+    const v=await img64(i.files[0],Number(i.dataset.max));
+    if(k==='shot'){const t=curTour();if(t){await setDoc(doc(db,'tournaments',t.id),{res:{shot:v}},{merge:true});toast('Uploaded')}}else await save({[k]:v},'Uploaded');
+  }catch(x){console.error(x);toast('Upload nahi hua')}
+});
+</script>
+<button id="langBtn" type="button" style="position:fixed;left:12px;bottom:12px;z-index:9999;padding:8px 14px;border-radius:20px;border:1px solid #888;background:#111;color:#fff;font-weight:700;cursor:pointer">हिंदी</button>
+<script>
+(()=>{
+const Z=0;
+const D={};
+[
+["Menu",Z,"मेन्यू"],["Home",Z,"होम"],["Tournaments",Z,"टूर्नामेंट"],["Register",Z,"रजिस्टर"],["My Registration",Z,"मेरा रजिस्ट्रेशन"],["Wallet",Z,"वॉलेट"],["Rewards",Z,"रिवॉर्ड्स"],["Leaderboard",Z,"लीडरबोर्ड"],["Results",Z,"रिज़ल्ट"],["Hall of Fame",Z,"हॉल ऑफ फेम"],["FAQ",Z,"सवाल-जवाब"],["Rules",Z,"नियम"],["Contact",Z,"संपर्क"],["Login",Z,"लॉगिन"],["Upcoming",Z,"आने वाला"],
+["Free Fire MAX · Squad (4 Players) · Daily Tournaments",Z,"Free Fire MAX · स्क्वाड (4 खिलाड़ी) · रोज़ टूर्नामेंट"],["Days",Z,"दिन"],["Hours",Z,"घंटे"],["Min",Z,"मिनट"],["Sec",Z,"सेकंड"],
+["Register Now",Z,"अभी रजिस्टर करें"],["Saare Tournaments","All Tournaments","सभी टूर्नामेंट"],["Prize Pool",Z,"प्राइज़ पूल"],["Entry Fee",Z,"एंट्री फीस"],["Squad",Z,"स्क्वाड"],["Mode (4 Players)",Z,"मोड (4 खिलाड़ी)"],["Teams Registered",Z,"रजिस्टर्ड टीमें"],["Latest Announcements",Z,"ताज़ा घोषणाएँ"],["Winners",Z,"विजेता"],["Registered Teams",Z,"रजिस्टर्ड टीमें"],["Team",Z,"टीम"],["Status",Z,"स्टेटस"],["Team Registration",Z,"टीम रजिस्ट्रेशन"],
+["Registration ke liye pehle login karein.","Please log in first to register.","रजिस्टर करने के लिए पहले लॉगिन करें।"],["Login with OTP","Login with OTP","OTP से लॉगिन"],["Registration abhi band hai.","Registration is closed right now.","रजिस्ट्रेशन अभी बंद है।"],["Tournament chunein","Select tournament","टूर्नामेंट चुनें"],
+["Payment",Z,"पेमेंट"],["Payment kaise karein","How to pay","पेमेंट कैसे करें"],["Wallet se pay karein","Pay from wallet","वॉलेट से पे करें"],["QR code admin panel se upload hoga.","The QR code will be uploaded from the admin panel.","QR कोड एडमिन पैनल से अपलोड होगा।"],["Copy",Z,"कॉपी"],
+["1. QR scan karein ya UPI ID par","1. Scan the QR or pay to the UPI ID","1. QR स्कैन करें या UPI ID पर"],["bhejein.","","भेजें।"],
+["2. Payment ke baad 12 digit UTR / Transaction ID note karein.","2. After paying, note the 12-digit UTR / Transaction ID.","2. पेमेंट के बाद 12 अंकों का UTR / ट्रांज़ैक्शन ID नोट करें।"],["3. Neeche form me UTR daal kar submit karein.","3. Enter the UTR in the form below and submit.","3. नीचे फ़ॉर्म में UTR डालकर सबमिट करें।"],
+["Wallet Balance:",Z,"वॉलेट बैलेंस:"],["· Entry Fee:",Z,"· एंट्री फीस:"],
+["Entry fee wallet se turant kat jayegi aur registration auto-approve ho jayegi. Balance kam ho to","The entry fee is deducted from your wallet instantly and registration is auto-approved. If your balance is low, add money in","एंट्री फीस वॉलेट से तुरंत कट जाएगी और रजिस्ट्रेशन अपने आप अप्रूव हो जाएगा। बैलेंस कम हो तो"],["me paise add karein.",".","में पैसे जोड़ें।"],
+["Team Name",Z,"टीम का नाम"],["Captain Name",Z,"कैप्टन का नाम"],["Captain WhatsApp Number",Z,"कैप्टन का WhatsApp नंबर"],["Captain UID",Z,"कैप्टन UID"],["Player 2 UID",Z,"प्लेयर 2 UID"],["Player 3 UID",Z,"प्लेयर 3 UID"],["Player 4 UID",Z,"प्लेयर 4 UID"],["UTR / Transaction ID",Z,"UTR / ट्रांज़ैक्शन ID"],["Payment Screenshot (optional)",Z,"पेमेंट स्क्रीनशॉट (वैकल्पिक)"],
+["Main","I agree to the","मैं"],["Tournament Rules",Z,"टूर्नामेंट नियमों"],["se agree hu.",".","से सहमत हूँ।"],["Submit Registration",Z,"रजिस्ट्रेशन सबमिट करें"],["Registration submit ho gayi!","Registration submitted!","रजिस्ट्रेशन सबमिट हो गया!"],["Aapka Team ID:","Your Team ID:","आपकी टीम ID:"],
+["Team ID se check karein","Check with Team ID","टीम ID से चेक करें"],["Team ID",Z,"टीम ID"],["Check Status",Z,"स्टेटस चेक करें"],
+["Wallet dekhne ke liye login karein.","Please log in to view your wallet.","वॉलेट देखने के लिए लॉगिन करें।"],["Available Balance",Z,"उपलब्ध बैलेंस"],["Logout",Z,"लॉगआउट"],["Add Money",Z,"पैसे जोड़ें"],["Withdraw",Z,"निकासी"],["History",Z,"हिस्ट्री"],
+["Deposit (UPI se)","Deposit (via UPI)","डिपॉज़िट (UPI से)"],["1. UPI se paise bhejein.","1. Send money via UPI.","1. UPI से पैसे भेजें।"],["2. 12 digit UTR niche daalein.","2. Enter the 12-digit UTR below.","2. नीचे 12 अंकों का UTR डालें।"],["3. Admin verify karega to balance add ho jayega.","3. Once the admin verifies it, the balance will be added.","3. एडमिन वेरिफाई करेगा तो बैलेंस जुड़ जाएगा।"],
+["Amount (₹)","Amount (₹)","राशि (₹)"],["Deposit Request Bhejein","Send Deposit Request","डिपॉज़िट रिक्वेस्ट भेजें"],["Aapki UPI ID","Your UPI ID","आपकी UPI ID"],["Withdraw Request Bhejein","Send Withdraw Request","निकासी रिक्वेस्ट भेजें"],
+["Request bhejte hi amount balance se hold ho jata hai. Reject hone par wapas wallet me aa jayega.","The amount is held from your balance as soon as you send the request. If rejected, it returns to your wallet.","रिक्वेस्ट भेजते ही राशि बैलेंस से होल्ड हो जाती है। रिजेक्ट होने पर वापस वॉलेट में आ जाएगी।"],["Date",Z,"तारीख"],["Type",Z,"टाइप"],["Amount",Z,"राशि"],
+["Rewards ke liye login karein.","Please log in to see rewards.","रिवॉर्ड्स के लिए लॉगिन करें।"],["Spin & Win",Z,"स्पिन और जीतो"],["Redeem Code",Z,"रिडीम कोड"],["Refer & Earn",Z,"रेफ़र करो, कमाओ"],["Daily Spin & Win",Z,"रोज़ स्पिन और जीतो"],
+["Har 24 ghante me 1 free spin. Jeeti hui rakam seedha wallet me.","1 free spin every 24 hours. Winnings go straight to your wallet.","हर 24 घंटे में 1 फ्री स्पिन। जीती हुई राशि सीधे वॉलेट में।"],["SPIN",Z,"स्पिन"],
+["Admin ya WhatsApp channel se mila code yahan daalein. Har code ek account par ek hi baar chalega.","Enter the code you got from the admin or WhatsApp channel. Each code works only once per account.","एडमिन या WhatsApp चैनल से मिला कोड यहाँ डालें। हर कोड एक अकाउंट पर सिर्फ एक बार चलेगा।"],["Code",Z,"कोड"],["Redeem",Z,"रिडीम"],
+["Aapka Referral Code","Your Referral Code","आपका रेफ़रल कोड"],["Referral Earnings",Z,"रेफ़रल कमाई"],["Share Link",Z,"लिंक शेयर करें"],["WhatsApp par Share karein","Share on WhatsApp","WhatsApp पर शेयर करें"],["Notifications",Z,"नोटिफ़िकेशन"],
+["Email se Login / Sign up","Login / Sign up with Email","ईमेल से लॉगिन / साइन अप"],["Email",Z,"ईमेल"],["Password (kam se kam 6 character)","Password (at least 6 characters)","पासवर्ड (कम से कम 6 अक्षर)"],["Naam (sirf naye users ke liye)","Name (new users only)","नाम (सिर्फ नए यूज़र के लिए)"],["Referral Code (optional)",Z,"रेफ़रल कोड (वैकल्पिक)"],["Sign up",Z,"साइन अप"],["Password bhool gaye?","Forgot password?","पासवर्ड भूल गए?"],["— ya —","— or —","— या —"],
+["OTP se Login / Sign up","Login / Sign up with OTP","OTP से लॉगिन / साइन अप"],["Mobile Number (+91)",Z,"मोबाइल नंबर (+91)"],["OTP Bhejein","Send OTP","OTP भेजें"],["OTP","OTP sent to","OTP"],["par bheja gaya hai.",".","पर भेजा गया है।"],["6 digit OTP","6-digit OTP","6 अंकों का OTP"],["Verify & Login",Z,"वेरिफाई करके लॉगिन"],["Number badlein","Change number","नंबर बदलें"],
+["Rank",Z,"रैंक"],["Total Kills",Z,"कुल किल्स"],["Total Points",Z,"कुल पॉइंट्स"],["Match Results",Z,"मैच रिज़ल्ट"],["Official Tournament Rules",Z,"आधिकारिक टूर्नामेंट नियम"],["Refund Policy",Z,"रिफंड पॉलिसी"],["Privacy Policy",Z,"प्राइवेसी पॉलिसी"],["Terms & Conditions",Z,"नियम और शर्तें"],["Download Rules PDF",Z,"नियम PDF डाउनलोड करें"],["Contact Us",Z,"हमसे संपर्क करें"],["Admin Login",Z,"एडमिन लॉगिन"],["Password",Z,"पासवर्ड"],["Admin",Z,"एडमिन"],["WhatsApp Support",Z,"WhatsApp सपोर्ट"],
+["Team name se search karein","Search by team name","टीम के नाम से खोजें"],["10 digit number","10-digit number","10 अंकों का नंबर"],["10 digit","10-digit","10 अंक"],["12 digit UTR","12-digit UTR","12 अंकों का UTR"]
+].forEach(r=>D[r[0]]=[r[1]===0?r[0]:r[1],r[2]]);
+let L=localStorage.getItem('lang')||'en';
+const O=new WeakMap(),btn=document.getElementById('langBtn');
+const pick=k=>{const e=D[k];return e?(L==='hi'?e[1]:e[0]):k};
+function tx(n){
+  const v=n.nodeValue,s=O.get(n),o=(s&&v===s.t)?s.o:v,k=o.trim();
+  const t=D[k]?o.replace(k,pick(k)):o;
+  O.set(n,{o,t});if(t!==v)n.nodeValue=t;
+}
+function ph(el){
+  const v=el.getAttribute('placeholder'),s=el._ph,o=(s&&v===s.t)?s.o:v,t=D[o]?pick(o):o;
+  el._ph={o,t};if(t!==v)el.setAttribute('placeholder',t);
+}
+function walk(r){
+  if(r.nodeType===3){tx(r);return}
+  const w=document.createTreeWalker(r,NodeFilter.SHOW_TEXT,{acceptNode:n=>/^(SCRIPT|STYLE)$/.test(n.parentNode.nodeName)?2:1});
+  let n;while(n=w.nextNode())tx(n);
+  r.querySelectorAll('[placeholder]').forEach(ph);
+}
+const mo=new MutationObserver(ms=>{
+  mo.disconnect();
+  ms.forEach(m=>{
+    if(m.type==='characterData')tx(m.target);
+    m.addedNodes.forEach(a=>{if(a.nodeType===3)tx(a);else if(a.nodeType===1)walk(a)});
+  });
+  attach();
+});
+function attach(){mo.observe(document.body,{childList:true,subtree:true,characterData:true})}
+function apply(){mo.disconnect();walk(document.body);attach();btn.textContent=L==='hi'?'English':'हिंदी';document.documentElement.lang=L}
+btn.onclick=()=>{L=L==='hi'?'en':'hi';localStorage.setItem('lang',L);apply()};
+apply();
+})();
+</script>
+</body>
+</html>
